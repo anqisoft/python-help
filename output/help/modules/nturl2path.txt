@@ -1,0 +1,31 @@
+Help on module nturl2path:
+
+NAME
+    nturl2path - Convert a NT pathname to a file URL and vice versa.
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/nturl2path
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    This module only exists to provide OS-specific code
+    for urllib.requests, thus do not use directly.
+
+FUNCTIONS
+    pathname2url(p)
+        OS-specific conversion from a file system path to a relative URL
+        of the 'file' scheme; not recommended for general use.
+    
+    url2pathname(url)
+        OS-specific conversion from a relative URL of the 'file' scheme
+        to a file system path; not recommended for general use.
+
+FILE
+    c:\program files\python39\lib\nturl2path.py
+
+

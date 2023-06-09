@@ -1,0 +1,17 @@
+__builtins__
+__cached__
+__doc__
+__file__
+__loader__
+__name__
+__package__
+__spec__
+_aix_bgt
+_aix_bos_rte
+_aix_tag
+_aix_vrtl
+aix_buildtag
+aix_platform
+subprocess
+sys
+sysconfig

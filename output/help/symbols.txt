@@ -1,0 +1,20 @@
+
+Here is a list of the punctuation symbols which Python assigns special meaning
+to. Enter any symbol to get more help.
+
+!=                  +                   <=                  __
+"                   +=                  <>                  `
+"""                 ,                   ==                  b"
+%                   -                   >                   b'
+%=                  -=                  >=                  f"
+&                   .                   >>                  f'
+&=                  ...                 >>=                 j
+'                   /                   @                   r"
+'''                 //                  J                   r'
+(                   //=                 [                   u"
+)                   /=                  \                   u'
+*                   :                   ]                   |
+**                  <                   ^                   |=
+**=                 <<                  ^=                  ~
+*=                  <<=                 _                   
+

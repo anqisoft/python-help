@@ -1,0 +1,53 @@
+Help on module _bootsubprocess:
+
+NAME
+    _bootsubprocess
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/_bootsubprocess
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    Basic subprocess implementation for POSIX which only uses os functions. Only
+    implement features required by setup.py to build C extension modules when
+    subprocess is unavailable. setup.py is not used on Windows.
+
+CLASSES
+    builtins.object
+        Popen
+    
+    class Popen(builtins.object)
+     |  Popen(cmd, env=None)
+     |  
+     |  # distutils.spawn used by distutils.command.build_ext
+     |  # calls subprocess.Popen().wait()
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(self, cmd, env=None)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  wait(self)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+
+FUNCTIONS
+    check_output(cmd, **kwargs)
+        # _aix_support used by distutil.util calls subprocess.check_output()
+
+FILE
+    c:\program files\python39\lib\_bootsubprocess.py
+
+

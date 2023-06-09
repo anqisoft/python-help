@@ -1,0 +1,91 @@
+Help on package idlelib:
+
+NAME
+    idlelib - The idlelib package implements the Idle application.
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/idlelib
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    Idle includes an interactive shell and editor.
+    Starting with Python 3.6, IDLE requires tcl/tk 8.5 or later.
+    Use the files named idle.* to start Idle.
+    
+    The other files are private implementations.  Their details are subject to
+    change.  See PEP 434 for more.  Import them at your own risk.
+
+PACKAGE CONTENTS
+    __main__
+    autocomplete
+    autocomplete_w
+    autoexpand
+    browser
+    calltip
+    calltip_w
+    codecontext
+    colorizer
+    config
+    config_key
+    configdialog
+    debugger
+    debugger_r
+    debugobj
+    debugobj_r
+    delegator
+    dynoption
+    editor
+    filelist
+    format
+    grep
+    help
+    help_about
+    history
+    hyperparser
+    idle
+    idle_test (package)
+    iomenu
+    macosx
+    mainmenu
+    multicall
+    outwin
+    parenmatch
+    pathbrowser
+    percolator
+    pyparse
+    pyshell
+    query
+    redirector
+    replace
+    rpc
+    run
+    runscript
+    scrolledlist
+    search
+    searchbase
+    searchengine
+    sidebar
+    squeezer
+    stackviewer
+    statusbar
+    textview
+    tooltip
+    tree
+    undo
+    util
+    window
+    zoomheight
+    zzdummy
+
+DATA
+    testing = False
+
+FILE
+    c:\program files\python39\lib\idlelib\__init__.py
+
+

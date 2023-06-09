@@ -1,0 +1,1 @@
+{'top_catalog': '../../output/dir/success', 'any': '__spec__', 'catalog': '../../output/dir/success/__spec__'}

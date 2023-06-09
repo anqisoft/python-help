@@ -1,0 +1,23 @@
+Binary bitwise operations
+*************************
+
+Each of the three bitwise operations has a different priority level:
+
+   and_expr ::= shift_expr | and_expr "&" shift_expr
+   xor_expr ::= and_expr | xor_expr "^" and_expr
+   or_expr  ::= xor_expr | or_expr "|" xor_expr
+
+The "&" operator yields the bitwise AND of its arguments, which must
+be integers or one of them must be a custom object overriding
+"__and__()" or "__rand__()" special methods.
+
+The "^" operator yields the bitwise XOR (exclusive OR) of its
+arguments, which must be integers or one of them must be a custom
+object overriding "__xor__()" or "__rxor__()" special methods.
+
+The "|" operator yields the bitwise (inclusive) OR of its arguments,
+which must be integers or one of them must be a custom object
+overriding "__or__()" or "__ror__()" special methods.
+
+Related help topics: EXPRESSIONS
+

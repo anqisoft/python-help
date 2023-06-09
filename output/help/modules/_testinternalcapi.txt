@@ -1,0 +1,21 @@
+Help on module _testinternalcapi:
+
+NAME
+    _testinternalcapi
+
+FUNCTIONS
+    get_configs(...)
+    
+    get_recursion_depth(...)
+    
+    test_bswap(...)
+    
+    test_hashtable(...)
+
+DATA
+    SIZEOF_PYGC_HEAD = 16
+
+FILE
+    c:\program files\python39\dlls\_testinternalcapi.pyd
+
+

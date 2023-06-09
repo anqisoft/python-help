@@ -1,0 +1,9 @@
+Help on module _zoneinfo:
+
+NAME
+    _zoneinfo - C implementation of the zoneinfo module
+
+FILE
+    c:\program files\python39\dlls\_zoneinfo.pyd
+
+

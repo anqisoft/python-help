@@ -1,0 +1,25 @@
+Help on package urllib:
+
+NAME
+    urllib
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/urllib
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+PACKAGE CONTENTS
+    error
+    parse
+    request
+    response
+    robotparser
+
+FILE
+    c:\program files\python39\lib\urllib\__init__.py
+
+

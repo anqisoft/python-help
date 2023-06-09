@@ -1,0 +1,12 @@
+Type Objects
+************
+
+Type objects represent the various object types.  An object’s type is
+accessed by the built-in function "type()".  There are no special
+operations on types.  The standard module "types" defines names for
+all standard built-in types.
+
+Types are written like this: "<class 'int'>".
+
+Related help topics: types, TYPES
+

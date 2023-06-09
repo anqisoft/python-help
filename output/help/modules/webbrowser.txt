@@ -1,0 +1,119 @@
+Help on module webbrowser:
+
+NAME
+    webbrowser - Interfaces for launching and remotely controlling Web browsers.
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/webbrowser
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+CLASSES
+    builtins.Exception(builtins.BaseException)
+        Error
+    
+    class Error(builtins.Exception)
+     |  Method resolution order:
+     |      Error
+     |      builtins.Exception
+     |      builtins.BaseException
+     |      builtins.object
+     |  
+     |  Data descriptors defined here:
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.Exception:
+     |  
+     |  __init__(self, /, *args, **kwargs)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.Exception:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.BaseException:
+     |  
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __setattr__(self, name, value, /)
+     |      Implement setattr(self, name, value).
+     |  
+     |  __setstate__(...)
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  with_traceback(...)
+     |      Exception.with_traceback(tb) --
+     |      set self.__traceback__ to tb and return self.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.BaseException:
+     |  
+     |  __cause__
+     |      exception cause
+     |  
+     |  __context__
+     |      exception context
+     |  
+     |  __dict__
+     |  
+     |  __suppress_context__
+     |  
+     |  __traceback__
+     |  
+     |  args
+
+FUNCTIONS
+    get(using=None)
+        Return a browser launcher instance appropriate for the environment.
+    
+    open(url, new=0, autoraise=True)
+        Display url using the default browser.
+        
+        If possible, open url in a location determined by new.
+        - 0: the same browser window (the default).
+        - 1: a new browser window.
+        - 2: a new browser page ("tab").
+        If possible, autoraise raises the window (the default) or not.
+    
+    open_new(url)
+        Open url in a new window of the default browser.
+        
+        If not possible, then open url in the only browser window.
+    
+    open_new_tab(url)
+        Open url in a new page ("tab") of the default browser.
+        
+        If not possible, then the behavior becomes equivalent to open_new().
+    
+    register(name, klass, instance=None, *, preferred=False)
+        Register a browser connector.
+
+DATA
+    __all__ = ['Error', 'open', 'open_new', 'open_new_tab', 'get', 'regist...
+
+FILE
+    c:\program files\python39\lib\webbrowser.py
+
+

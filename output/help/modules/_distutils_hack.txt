@@ -1,0 +1,113 @@
+Help on package _distutils_hack:
+
+NAME
+    _distutils_hack - # don't import any costly modules
+
+PACKAGE CONTENTS
+    override
+
+CLASSES
+    builtins.object
+        DistutilsMetaFinder
+        shim
+    
+    class DistutilsMetaFinder(builtins.object)
+     |  Methods defined here:
+     |  
+     |  find_spec(self, fullname, path, target=None)
+     |  
+     |  spec_for_distutils(self)
+     |  
+     |  spec_for_pip(self)
+     |      Ensure stdlib distutils when running under pip.
+     |      See pypa/pip#8761 for rationale.
+     |  
+     |  spec_for_sensitive_tests(self)
+     |      Ensure stdlib distutils when running select tests under CPython.
+     |      
+     |      python/cpython#91169
+     |  
+     |  spec_for_test.test_distutils = spec_for_sensitive_tests(self)
+     |  
+     |  spec_for_test.test_importlib = spec_for_sensitive_tests(self)
+     |  
+     |  spec_for_test.test_peg_generator = spec_for_sensitive_tests(self)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods defined here:
+     |  
+     |  pip_imported_during_build() from builtins.type
+     |      Detect if pip is being imported in a build script. Ref #2355.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  frame_file_is_setup(frame)
+     |      Return True if the indicated frame suggests a setup.py file.
+     |  
+     |  is_cpython()
+     |      Suppress supplying distutils for CPython (build and tests).
+     |      Ref #2965 and #3007.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  sensitive_tests = ['test.test_distutils', 'test.test_peg_generator', '...
+    
+    class shim(builtins.object)
+     |  Methods defined here:
+     |  
+     |  __enter__(self)
+     |  
+     |  __exit__(self, exc, value, tb)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+
+FUNCTIONS
+    add_shim()
+    
+    clear_distutils()
+    
+    do_override()
+        Ensure that the local copy of distutils is preferred over stdlib.
+        
+        See https://github.com/pypa/setuptools/issues/417#issuecomment-392298401
+        for more motivation.
+    
+    enabled()
+        Allow selection of distutils by environment variable.
+    
+    ensure_local_distutils()
+    
+    insert_shim()
+    
+    remove_shim()
+    
+    warn_distutils_present()
+
+DATA
+    DISTUTILS_FINDER = <_distutils_hack.DistutilsMetaFinder object>
+    __warningregistry__ = {'version': 1, ('Setuptools is replacing distuti...
+    is_pypy = False
+    name = 'test.test_importlib'
+
+FILE
+    p:\anqi\desktop\tech\python\projects\help\venv\lib\site-packages\_distutils_hack\__init__.py
+
+

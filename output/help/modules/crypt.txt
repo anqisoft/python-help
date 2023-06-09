@@ -1,0 +1,2 @@
+problem in crypt - ImportError: The crypt module is not supported on Windows
+

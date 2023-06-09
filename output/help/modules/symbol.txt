@@ -1,0 +1,113 @@
+Help on module symbol:
+
+NAME
+    symbol - Non-terminal symbols of Python grammar (from "graminit.h").
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/symbol
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DATA
+    and_expr = 318
+    and_test = 311
+    annassign = 273
+    arglist = 335
+    argument = 336
+    arith_expr = 320
+    assert_stmt = 294
+    async_funcdef = 262
+    async_stmt = 296
+    atom = 325
+    atom_expr = 324
+    augassign = 275
+    break_stmt = 279
+    classdef = 334
+    comp_for = 339
+    comp_if = 340
+    comp_iter = 337
+    comp_op = 314
+    comparison = 313
+    compound_stmt = 295
+    continue_stmt = 280
+    decorated = 261
+    decorator = 259
+    decorators = 260
+    del_stmt = 276
+    dictorsetmaker = 333
+    dotted_as_name = 288
+    dotted_as_names = 290
+    dotted_name = 291
+    encoding_decl = 341
+    eval_input = 258
+    except_clause = 303
+    expr = 316
+    expr_stmt = 272
+    exprlist = 331
+    factor = 322
+    file_input = 257
+    flow_stmt = 278
+    for_stmt = 299
+    func_body_suite = 344
+    func_type = 346
+    func_type_input = 345
+    funcdef = 263
+    global_stmt = 292
+    if_stmt = 297
+    import_as_name = 287
+    import_as_names = 289
+    import_from = 286
+    import_name = 285
+    import_stmt = 284
+    lambdef = 308
+    lambdef_nocond = 309
+    namedexpr_test = 305
+    nonlocal_stmt = 293
+    not_test = 312
+    or_test = 310
+    parameters = 264
+    pass_stmt = 277
+    power = 323
+    raise_stmt = 283
+    return_stmt = 281
+    shift_expr = 319
+    simple_stmt = 270
+    single_input = 256
+    sliceop = 330
+    small_stmt = 271
+    star_expr = 315
+    stmt = 269
+    subscript = 329
+    subscriptlist = 328
+    suite = 304
+    sym_name = {256: 'single_input', 257: 'file_input', 258: 'eval_input',...
+    sync_comp_for = 338
+    term = 321
+    test = 306
+    test_nocond = 307
+    testlist = 332
+    testlist_comp = 326
+    testlist_star_expr = 274
+    tfpdef = 266
+    trailer = 327
+    try_stmt = 300
+    typedargslist = 265
+    typelist = 347
+    varargslist = 267
+    vfpdef = 268
+    while_stmt = 298
+    with_item = 302
+    with_stmt = 301
+    xor_expr = 317
+    yield_arg = 343
+    yield_expr = 342
+    yield_stmt = 282
+
+FILE
+    c:\program files\python39\lib\symbol.py
+
+

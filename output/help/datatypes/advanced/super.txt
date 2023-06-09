@@ -1,0 +1,49 @@
+Help on class super in module builtins:
+
+class super(object)
+ |  super() -> same as super(__class__, <first argument>)
+ |  super(type) -> unbound super object
+ |  super(type, obj) -> bound super object; requires isinstance(obj, type)
+ |  super(type, type2) -> bound super object; requires issubclass(type2, type)
+ |  Typical use to call a cooperative superclass method:
+ |  class C(B):
+ |      def meth(self, arg):
+ |          super().meth(arg)
+ |  This works for class methods too:
+ |  class C(B):
+ |      @classmethod
+ |      def cmeth(cls, arg):
+ |          super().cmeth(arg)
+ |  
+ |  Methods defined here:
+ |  
+ |  __get__(self, instance, owner, /)
+ |      Return an attribute of instance, which is of type owner.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __self__
+ |      the instance invoking super(); may be None
+ |  
+ |  __self_class__
+ |      the type of the instance invoking super(); may be None
+ |  
+ |  __thisclass__
+ |      the class invoking super()
+

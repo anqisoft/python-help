@@ -1,0 +1,15 @@
+The "continue" statement
+************************
+
+   continue_stmt ::= "continue"
+
+"continue" may only occur syntactically nested in a "for" or "while"
+loop, but not nested in a function or class definition within that
+loop.  It continues with the next cycle of the nearest enclosing loop.
+
+When "continue" passes control out of a "try" statement with a
+"finally" clause, that "finally" clause is executed before really
+starting the next loop cycle.
+
+Related help topics: while, for
+

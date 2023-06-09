@@ -1,0 +1,56 @@
+Help on class BuiltinImporter in module importlib._bootstrap:
+
+__loader__ = class BuiltinImporter(builtins.object)
+ |  Meta path import for built-in modules.
+ |  
+ |  All methods are either class or static methods to avoid the need to
+ |  instantiate the class.
+ |  
+ |  Class methods defined here:
+ |  
+ |  create_module(spec) from builtins.type
+ |      Create a built-in module
+ |  
+ |  exec_module(module) from builtins.type
+ |      Exec a built-in module
+ |  
+ |  find_module(fullname, path=None) from builtins.type
+ |      Find the built-in module.
+ |      
+ |      If 'path' is ever specified then the search is considered a failure.
+ |      
+ |      This method is deprecated.  Use find_spec() instead.
+ |  
+ |  find_spec(fullname, path=None, target=None) from builtins.type
+ |  
+ |  get_code(fullname) from builtins.type
+ |      Return None as built-in modules do not have code objects.
+ |  
+ |  get_source(fullname) from builtins.type
+ |      Return None as built-in modules do not have source code.
+ |  
+ |  is_package(fullname) from builtins.type
+ |      Return False as built-in modules are never packages.
+ |  
+ |  load_module = _load_module_shim(fullname) from builtins.type
+ |      Load the specified module into sys.modules and return it.
+ |      
+ |      This method is deprecated.  Use loader.exec_module instead.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  module_repr(module)
+ |      Return repr for the module.
+ |      
+ |      The method is deprecated.  The import machinery does the job itself.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+

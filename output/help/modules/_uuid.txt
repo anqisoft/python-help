@@ -1,0 +1,15 @@
+Help on module _uuid:
+
+NAME
+    _uuid
+
+FUNCTIONS
+    UuidCreate(...)
+
+DATA
+    has_uuid_generate_time_safe = 0
+
+FILE
+    c:\program files\python39\dlls\_uuid.pyd
+
+

@@ -1,0 +1,60 @@
+Help on package distutils:
+
+NAME
+    distutils - distutils
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/distutils
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    The main package for the Python Module Distribution Utilities.  Normally
+    used from a setup script as
+    
+       from distutils.core import setup
+    
+       setup (...)
+
+PACKAGE CONTENTS
+    _msvccompiler
+    archive_util
+    bcppcompiler
+    ccompiler
+    cmd
+    command (package)
+    config
+    core
+    cygwinccompiler
+    debug
+    dep_util
+    dir_util
+    dist
+    errors
+    extension
+    fancy_getopt
+    file_util
+    filelist
+    log
+    msvc9compiler
+    msvccompiler
+    spawn
+    sysconfig
+    tests (package)
+    text_file
+    unixccompiler
+    util
+    version
+    versionpredicate
+
+VERSION
+    3.9.13
+
+FILE
+    c:\program files\python39\lib\distutils\__init__.py
+
+

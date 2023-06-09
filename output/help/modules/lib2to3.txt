@@ -1,0 +1,33 @@
+Help on package lib2to3:
+
+NAME
+    lib2to3
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/lib2to3
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+PACKAGE CONTENTS
+    __main__
+    btm_matcher
+    btm_utils
+    fixer_base
+    fixer_util
+    fixes (package)
+    main
+    patcomp
+    pgen2 (package)
+    pygram
+    pytree
+    refactor
+    tests (package)
+
+FILE
+    c:\program files\python39\lib\lib2to3\__init__.py
+
+

@@ -1,0 +1,1122 @@
+Help on module types:
+
+NAME
+    types - Define names for built-in types that aren't directly accessible as a builtin.
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/types
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+CLASSES
+    builtins.object
+        builtins.async_generator
+        builtins.builtin_function_or_method
+        builtins.cell
+        builtins.classmethod_descriptor
+        builtins.code
+        builtins.coroutine
+        builtins.frame
+        builtins.function
+        builtins.generator
+        builtins.getset_descriptor
+        builtins.mappingproxy
+        builtins.member_descriptor
+        builtins.method
+        builtins.method-wrapper
+        builtins.method_descriptor
+        builtins.module
+        builtins.traceback
+        builtins.wrapper_descriptor
+        DynamicClassAttribute
+        GenericAlias
+        SimpleNamespace
+    
+    AsyncGeneratorType = class async_generator(object)
+     |  Methods defined here:
+     |  
+     |  __aiter__(self, /)
+     |      Return an awaitable, that resolves in asynchronous iterator.
+     |  
+     |  __anext__(self, /)
+     |      Return a value or raise StopAsyncIteration.
+     |  
+     |  __del__(...)
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  aclose(...)
+     |      aclose() -> raise GeneratorExit inside generator.
+     |  
+     |  asend(...)
+     |      asend(v) -> send 'v' in generator.
+     |  
+     |  athrow(...)
+     |      athrow(typ[,val[,tb]]) -> raise exception in generator.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods defined here:
+     |  
+     |  __class_getitem__(...) from builtins.type
+     |      See PEP 585
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  ag_await
+     |      object being awaited on, or None
+     |  
+     |  ag_code
+     |  
+     |  ag_frame
+     |  
+     |  ag_running
+    
+    BuiltinFunctionType = class builtin_function_or_method(object)
+     |  Built-in subclasses:
+     |      builtin_method
+     |  
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __self__
+     |  
+     |  __text_signature__
+    
+    BuiltinMethodType = class builtin_function_or_method(object)
+     |  Built-in subclasses:
+     |      builtin_method
+     |  
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __self__
+     |  
+     |  __text_signature__
+    
+    CellType = class cell(object)
+     |  Create a new cell object.
+     |  
+     |   contents
+     |     the contents of the cell. If not specified, the cell will be empty,
+     |     and 
+     |  further attempts to access its cell_contents attribute will
+     |     raise a ValueError.
+     |  
+     |  Methods defined here:
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  cell_contents
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __hash__ = None
+    
+    ClassMethodDescriptorType = class classmethod_descriptor(object)
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __objclass__
+     |  
+     |  __text_signature__
+    
+    CodeType = class code(object)
+     |  code(argcount, posonlyargcount, kwonlyargcount, nlocals, stacksize,
+     |        flags, codestring, constants, names, varnames, filename, name,
+     |        firstlineno, lnotab[, freevars[, cellvars]])
+     |  
+     |  Create a code object.  Not for the faint of heart.
+     |  
+     |  Methods defined here:
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __sizeof__(...)
+     |      Size of object in memory, in bytes.
+     |  
+     |  replace(self, /, *, co_argcount=-1, co_posonlyargcount=-1, co_kwonlyargcount=-1, co_nlocals=-1, co_stacksize=-1, co_flags=-1, co_firstlineno=-1, co_code=None, co_consts=None, co_names=None, co_varnames=None, co_freevars=None, co_cellvars=None, co_filename=None, co_name=None, co_lnotab=None)
+     |      Return a copy of the code object with new values for the specified fields.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  co_argcount
+     |  
+     |  co_cellvars
+     |  
+     |  co_code
+     |  
+     |  co_consts
+     |  
+     |  co_filename
+     |  
+     |  co_firstlineno
+     |  
+     |  co_flags
+     |  
+     |  co_freevars
+     |  
+     |  co_kwonlyargcount
+     |  
+     |  co_lnotab
+     |  
+     |  co_name
+     |  
+     |  co_names
+     |  
+     |  co_nlocals
+     |  
+     |  co_posonlyargcount
+     |  
+     |  co_stacksize
+     |  
+     |  co_varnames
+    
+    CoroutineType = class coroutine(object)
+     |  Methods defined here:
+     |  
+     |  __await__(self, /)
+     |      Return an iterator to be used in await expression.
+     |  
+     |  __del__(...)
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  close(...)
+     |      close() -> raise GeneratorExit inside coroutine.
+     |  
+     |  send(...)
+     |      send(arg) -> send 'arg' into coroutine,
+     |      return next iterated value or raise StopIteration.
+     |  
+     |  throw(...)
+     |      throw(value)
+     |      throw(type[,value[,traceback]])
+     |      
+     |      Raise exception in coroutine, return next iterated value or raise
+     |      StopIteration.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  cr_await
+     |      object being awaited on, or None
+     |  
+     |  cr_code
+     |  
+     |  cr_frame
+     |  
+     |  cr_origin
+     |  
+     |  cr_running
+    
+    class DynamicClassAttribute(builtins.object)
+     |  DynamicClassAttribute(fget=None, fset=None, fdel=None, doc=None)
+     |  
+     |  Route attribute access on a class to __getattr__.
+     |  
+     |  This is a descriptor, used to define attributes that act differently when
+     |  accessed through an instance and through a class.  Instance access remains
+     |  normal, but access to an attribute through a class will be routed to the
+     |  class's __getattr__ method; this is done by raising AttributeError.
+     |  
+     |  This allows one to have properties active on an instance, and have virtual
+     |  attributes on the class with the same name (see Enum for an example).
+     |  
+     |  Methods defined here:
+     |  
+     |  __delete__(self, instance)
+     |  
+     |  __get__(self, instance, ownerclass=None)
+     |  
+     |  __init__(self, fget=None, fset=None, fdel=None, doc=None)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  __set__(self, instance, value)
+     |  
+     |  deleter(self, fdel)
+     |  
+     |  getter(self, fget)
+     |  
+     |  setter(self, fset)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+    
+    FrameType = class frame(object)
+     |  Methods defined here:
+     |  
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __setattr__(self, name, value, /)
+     |      Implement setattr(self, name, value).
+     |  
+     |  __sizeof__(...)
+     |      F.__sizeof__() -> size of F in memory, in bytes
+     |  
+     |  clear(...)
+     |      F.clear(): clear most references held by the frame
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  f_back
+     |  
+     |  f_builtins
+     |  
+     |  f_code
+     |  
+     |  f_globals
+     |  
+     |  f_lasti
+     |  
+     |  f_lineno
+     |  
+     |  f_locals
+     |  
+     |  f_trace
+     |  
+     |  f_trace_lines
+     |  
+     |  f_trace_opcodes
+    
+    FunctionType = class function(object)
+     |  FunctionType(code, globals, name=None, argdefs=None, closure=None)
+     |  
+     |  Create a function object.
+     |  
+     |  code
+     |    a code object
+     |  globals
+     |    the globals dictionary
+     |  name
+     |    a string that overrides the name from the code object
+     |  argdefs
+     |    a tuple that specifies the default argument values
+     |  closure
+     |    a tuple that supplies the bindings for free variables
+     |  
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __annotations__
+     |  
+     |  __closure__
+     |  
+     |  __code__
+     |  
+     |  __defaults__
+     |  
+     |  __dict__
+     |  
+     |  __globals__
+     |  
+     |  __kwdefaults__
+    
+    GeneratorType = class generator(object)
+     |  Methods defined here:
+     |  
+     |  __del__(...)
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __iter__(self, /)
+     |      Implement iter(self).
+     |  
+     |  __next__(self, /)
+     |      Implement next(self).
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  close(...)
+     |      close() -> raise GeneratorExit inside generator.
+     |  
+     |  send(...)
+     |      send(arg) -> send 'arg' into generator,
+     |      return next yielded value or raise StopIteration.
+     |  
+     |  throw(...)
+     |      throw(value)
+     |      throw(type[,value[,tb]])
+     |      
+     |      Raise exception in generator, return next yielded value or raise
+     |      StopIteration.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  gi_code
+     |  
+     |  gi_frame
+     |  
+     |  gi_running
+     |  
+     |  gi_yieldfrom
+     |      object being iterated by yield from, or None
+    
+    class GenericAlias(builtins.object)
+     |  Represent a PEP 585 generic type
+     |  
+     |  E.g. for t = list[int], t.__origin__ is list and t.__args__ is (int,).
+     |  
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __dir__(...)
+     |      Default dir() implementation.
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getitem__(self, key, /)
+     |      Return self[key].
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __instancecheck__(...)
+     |      Check if an object is an instance.
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mro_entries__(...)
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __subclasscheck__(...)
+     |      Check if a class is a subclass.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __args__
+     |  
+     |  __origin__
+     |  
+     |  __parameters__
+     |      Type variables in the GenericAlias.
+    
+    GetSetDescriptorType = class getset_descriptor(object)
+     |  Methods defined here:
+     |  
+     |  __delete__(self, instance, /)
+     |      Delete an attribute of instance.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __set__(self, instance, value, /)
+     |      Set an attribute of instance to value.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __objclass__
+    
+    LambdaType = class function(object)
+     |  LambdaType(code, globals, name=None, argdefs=None, closure=None)
+     |  
+     |  Create a function object.
+     |  
+     |  code
+     |    a code object
+     |  globals
+     |    the globals dictionary
+     |  name
+     |    a string that overrides the name from the code object
+     |  argdefs
+     |    a tuple that specifies the default argument values
+     |  closure
+     |    a tuple that supplies the bindings for free variables
+     |  
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __annotations__
+     |  
+     |  __closure__
+     |  
+     |  __code__
+     |  
+     |  __defaults__
+     |  
+     |  __dict__
+     |  
+     |  __globals__
+     |  
+     |  __kwdefaults__
+    
+    MappingProxyType = class mappingproxy(object)
+     |  Methods defined here:
+     |  
+     |  __contains__(self, key, /)
+     |      Return key in self.
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getitem__(self, key, /)
+     |      Return self[key].
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __ior__(self, value, /)
+     |      Return self|=value.
+     |  
+     |  __iter__(self, /)
+     |      Implement iter(self).
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __len__(self, /)
+     |      Return len(self).
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __reversed__(...)
+     |      D.__reversed__() -> reverse iterator
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  copy(...)
+     |      D.copy() -> a shallow copy of D
+     |  
+     |  get(...)
+     |      D.get(k[,d]) -> D[k] if k in D, else d.  d defaults to None.
+     |  
+     |  items(...)
+     |      D.items() -> a set-like object providing a view on D's items
+     |  
+     |  keys(...)
+     |      D.keys() -> a set-like object providing a view on D's keys
+     |  
+     |  values(...)
+     |      D.values() -> an object providing a view on D's values
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods defined here:
+     |  
+     |  __class_getitem__(...) from builtins.type
+     |      See PEP 585
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __hash__ = None
+    
+    MemberDescriptorType = class member_descriptor(object)
+     |  Methods defined here:
+     |  
+     |  __delete__(self, instance, /)
+     |      Delete an attribute of instance.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __set__(self, instance, value, /)
+     |      Set an attribute of instance to value.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __objclass__
+    
+    MethodDescriptorType = class method_descriptor(object)
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __objclass__
+     |  
+     |  __text_signature__
+    
+    MethodType = class method(object)
+     |  method(function, instance)
+     |  
+     |  Create a bound instance method object.
+     |  
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __setattr__(self, name, value, /)
+     |      Implement setattr(self, name, value).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __func__
+     |      the function (or other callable) implementing a method
+     |  
+     |  __self__
+     |      the instance to which a method is bound
+    
+    MethodWrapperType = class method-wrapper(object)
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __objclass__
+     |  
+     |  __self__
+     |  
+     |  __text_signature__
+    
+    ModuleType = class module(object)
+     |  ModuleType(name, doc=None)
+     |  
+     |  Create a module object.
+     |  
+     |  The name must be a string; the optional doc argument can have any type.
+     |  
+     |  Methods defined here:
+     |  
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |  
+     |  __dir__(...)
+     |      __dir__() -> list
+     |      specialized dir() implementation
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __init__(self, /, *args, **kwargs)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __setattr__(self, name, value, /)
+     |      Implement setattr(self, name, value).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+    
+    class SimpleNamespace(builtins.object)
+     |  A simple attribute-based namespace.
+     |  
+     |  SimpleNamespace(**kwargs)
+     |  
+     |  Methods defined here:
+     |  
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __init__(self, /, *args, **kwargs)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __reduce__(...)
+     |      Return state information for pickling
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __setattr__(self, name, value, /)
+     |      Implement setattr(self, name, value).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __hash__ = None
+    
+    TracebackType = class traceback(object)
+     |  TracebackType(tb_next, tb_frame, tb_lasti, tb_lineno)
+     |  --
+     |  
+     |  Create a new traceback object.
+     |  
+     |  Methods defined here:
+     |  
+     |  __dir__(...)
+     |      Default dir() implementation.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  tb_frame
+     |  
+     |  tb_lasti
+     |  
+     |  tb_lineno
+     |  
+     |  tb_next
+    
+    WrapperDescriptorType = class wrapper_descriptor(object)
+     |  Methods defined here:
+     |  
+     |  __call__(self, /, *args, **kwargs)
+     |      Call self as a function.
+     |  
+     |  __get__(self, instance, owner, /)
+     |      Return an attribute of instance, which is of type owner.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __objclass__
+     |  
+     |  __text_signature__
+
+FUNCTIONS
+    coroutine(func)
+        Convert regular generator function to a coroutine.
+    
+    new_class(name, bases=(), kwds=None, exec_body=None)
+        Create a class object dynamically using the appropriate metaclass.
+    
+    prepare_class(name, bases=(), kwds=None)
+        Call the __prepare__ method of the appropriate metaclass.
+        
+        Returns (metaclass, namespace, kwds) as a 3-tuple
+        
+        *metaclass* is the appropriate metaclass
+        *namespace* is the prepared class namespace
+        *kwds* is an updated copy of the passed in kwds argument with any
+        'metaclass' entry removed. If no kwds argument is passed in, this will
+        be an empty dict.
+    
+    resolve_bases(bases)
+        Resolve MRO entries dynamically as specified by PEP 560.
+
+DATA
+    __all__ = ['FunctionType', 'LambdaType', 'CodeType', 'MappingProxyType...
+
+FILE
+    c:\program files\python39\lib\types.py
+
+

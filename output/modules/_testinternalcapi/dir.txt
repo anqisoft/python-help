@@ -1,0 +1,11 @@
+SIZEOF_PYGC_HEAD
+__doc__
+__file__
+__loader__
+__name__
+__package__
+__spec__
+get_configs
+get_recursion_depth
+test_bswap
+test_hashtable

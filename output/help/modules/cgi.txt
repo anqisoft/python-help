@@ -1,0 +1,327 @@
+Help on module cgi:
+
+NAME
+    cgi - Support module for CGI (Common Gateway Interface) scripts.
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/cgi
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+DESCRIPTION
+    This module defines a number of utilities for use by CGI scripts
+    written in Python.
+
+CLASSES
+    builtins.object
+        FieldStorage
+        MiniFieldStorage
+    
+    class FieldStorage(builtins.object)
+     |  FieldStorage(fp=None, headers=None, outerboundary=b'', environ=environ({'INTELLIJ IDEA COMMUNITY EDITION': 'd:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;', 'PSEXECUTIONPOLICYPREFERENCE': 'RemoteSigned', 'TERM_SESSION_ID': '6d7a25f9-6228-4dab-a8d7-8cc7693f9501', 'NODE_OPTIONS': '--max_old_space_size=8192', 'PROGRAMW6432': 'C:\\Program Files', 'JRE_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1\\jre', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'FIG_JETBRAINS_SHELL_INTEGRATION': '1', 'GOPATH': 'C:\\Users\\AnQi1\\go', 'USERNAME': 'AnQi1', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\AnQi1', 'APACHE2_HOME': 'D:\\dev\\Apache24', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'MSI:Windows 10 Home China', 'QTJAVA': 'C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PROCESSOR_REVISION': '5e03', 'MAVEN_HOME': 'D:\\free\\apache-maven-3.6.0', 'IDEA_INITIAL_DIRECTORY': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin', 'PUBLIC': 'P:\\anqi\\users\\Public', 'PATH': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv/Scripts;C:\\Program Files\\Python39\\Scripts\\;C:\\Program Files\\Python39\\;D:\\dev\\selenium;D:\\dev\\vue2\\node_modules\\.bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk-17.0.1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Free\\7-Zip;D:\\Free\\phantomjs-2.1.1-windows\\bin;D:\\Free\\apache-tomcat-7.0.81-windows-x64\\bin;D:\\Free\\classExec-1.03b;D:\\Free\\gzip\\gzip124xN;D:\\Free\\md5;D:\\Free\\ttf2svg\\ttf2svg-master\\bin;C:\\Program Files (x86)\\WinMerge;C:\\Program Files (x86)\\Common Files\\Adobe\\AGL;C:\\Program Files (x86)\\Google\\Chrome\\Application;D:\\dev\\mysql-5.7.21-winx64\\bin;D:\\dev\\PHP_7_2_1;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;D:\\dev\\TDM-GCC-64\\bin;D:\\dev\\mingw\\bin;D:\\dev\\mingw\\msys\\1.0\\bin;D:\\dev\\doxygen\\bin;D:\\Free\\dmg2img v1.6.7;D:\\dev\\CMake\\bin;D:\\dev\\Pandoc\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\gauge\\bin;d:\\dev\\MiKTeX 2.9\\miktex\\bin\\x64\\;D:\\app\\Calibre2\\;D:\\free\\apache-maven-3.6.0\\bin;D:\\dev\\PuTTY\\;d:\\free;d:\\dev\\WinMerge;d:\\dev\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;D:\\free\\ffmpeg\\bin;D:\\Dev\\TortoiseSVN\\bin;D:\\dev\\opencv\\build\\java\\x64;D:\\dev\\Redis\\;d:\\app\\WinSCP\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\VSCodium\\bin;D:\\dev\\deno;D:\\dev\\Go\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.cargo\\bin;D:\\App\\Oracle\\VirtualBox\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;D:\\dev\\nvim-win64\\bin;D:\\dev\\微信web开发者工具\\dll;C:\\Pro;ram Files (x86)\\Microsoft\\Edge\\Application;D:\\App\\Mozilla Firefox;D:\\App\\Opera;C:\\Program Files\\Git\\cmd;C:\\Users\\AnQi1\\.cargo\\bin;C:\\Users\\AnQi1\\AppData\\Local\\pnpm;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;D:\\App\\�Ѻ�Ӱ��\\6.3.6.0;C:\\Users\\AnQi1\\.dotnet\\tools;D:\\App\\�Ѻ�Ӱ��\\6.5.8.1;C:\\Users\\AnQi1\\AppData\\Local\\atom\\bin;D:\\App\\搜狐影音\\6.5.12.0;d:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\Users\\AnQi1\\AppData\\Roaming\\npm;C:\\Users\\AnQi1\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\AnQi1\\go\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;;D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'HOMEDRIVE': 'C:', 'SESSIONNAME': 'Console', 'LOGONSERVER': '\\\\ANQISOFT01', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'HOMEPATH': '\\Users\\AnQi1', 'SYSTEMROOT': 'C:\\WINDOWS', 'MSMPI_BIN': 'C:\\Program Files\\Microsoft MPI\\Bin\\', 'CHOCOLATEYINSTALL': 'C:\\ProgramData\\chocolatey', 'VIRTUAL_ENV': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv', 'VS140COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\', 'NVM_HOME': 'd:\\dev\\nvm', 'LOCALAPPDATA': 'C:\\Users\\AnQi1\\AppData\\Local', 'WXDRIVE_START_ARGS': '--wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features=NetworkServiceInProcess', 'APPDATA': 'C:\\Users\\AnQi1\\AppData\\Roaming', 'OMP_NUM_THREADS': '8', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL', 'PSMODULEPATH': 'P:\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules', 'MOZ_PLUGIN_PATH': 'D:\\App\\Foxit Software\\Foxit PDF Reader\\Foxit PDF Reader\\plugins\\', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'ASL.LOG': 'Destination=file', 'OS': 'Windows_NT', 'NVM_SYMLINK': 'd:\\dev\\nodejs', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'NUMBER_OF_PROCESSORS': '8', 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1', 'SHPLAYER': 'D:\\App\\搜狐影音\\6.5.12.0', 'PROCESSOR_LEVEL': '6', 'CLASSPATH': '.;CLASSPATH=.;P:\\libs\\java\\jacob-1.19\\jacob.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\byte-buddy-1.7.9.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-codec-1.10.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-exec-1.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-logging-1.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\gson-2.8.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\guava-23.6-jre.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpclient-4.5.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpcore-4.4.6.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okhttp-3.9.1.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okio-1.13.0.jar;D:\\dev\\opencv\\build\\java\\opencv-451.jar;C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PYCHARM COMMUNITY EDITION': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;', 'USERDOMAIN_ROAMINGPROFILE': 'ANQISOFT01', 'WINDIR': 'C:\\WINDOWS', 'PROGRAMFILES': 'C:\\Program Files', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'VBOX_MSI_INSTALL_PATH': 'D:\\app\\Oracle\\VirtualBox\\', 'TEMP': 't:\\temp', 'TMP': 't:\\temp', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'ONEDRIVE': 'C:\\Users\\AnQi1\\OneDrive', 'MAVEN': 'D:\\free\\apache-maven-3.6.0\\bin', 'SYSTEMDRIVE': 'C:', 'USERDOMAIN': 'ANQISOFT01', 'COMPUTERNAME': 'ANQISOFT01', 'PROGRAMDATA': 'C:\\ProgramData', 'CHOCOLATEYLASTPATHUPDATE': '132939837380864710', 'NODE_PATH': 'd:\\dev\\node_modules', 'PNPM_HOME': 'C:\\Users\\AnQi1\\AppData\\Local\\pnpm', 'INTELLIJ IDEA': 'D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files'}), keep_blank_values=0, strict_parsing=0, limit=None, encoding='utf-8', errors='replace', max_num_fields=None, separator='&')
+     |  
+     |  Store a sequence of fields, reading multipart/form-data.
+     |  
+     |  This class provides naming, typing, files stored on disk, and
+     |  more.  At the top level, it is accessible like a dictionary, whose
+     |  keys are the field names.  (Note: None can occur as a field name.)
+     |  The items are either a Python list (if there's multiple values) or
+     |  another FieldStorage or MiniFieldStorage object.  If it's a single
+     |  object, it has the following attributes:
+     |  
+     |  name: the field name, if specified; otherwise None
+     |  
+     |  filename: the filename, if specified; otherwise None; this is the
+     |      client side filename, *not* the file name on which it is
+     |      stored (that's a temporary file you don't deal with)
+     |  
+     |  value: the value as a *string*; for file uploads, this
+     |      transparently reads the file every time you request the value
+     |      and returns *bytes*
+     |  
+     |  file: the file(-like) object from which you can read the data *as
+     |      bytes* ; None if the data is stored a simple string
+     |  
+     |  type: the content-type, or None if not specified
+     |  
+     |  type_options: dictionary of options specified on the content-type
+     |      line
+     |  
+     |  disposition: content-disposition, or None if not specified
+     |  
+     |  disposition_options: dictionary of corresponding options
+     |  
+     |  headers: a dictionary(-like) object (sometimes email.message.Message or a
+     |      subclass thereof) containing *all* headers
+     |  
+     |  The class is subclassable, mostly for the purpose of overriding
+     |  the make_file() method, which is called internally to come up with
+     |  a file open for reading and writing.  This makes it possible to
+     |  override the default choice of storing all files in a temporary
+     |  directory and unlinking them as soon as they have been opened.
+     |  
+     |  Methods defined here:
+     |  
+     |  __bool__(self)
+     |  
+     |  __contains__(self, key)
+     |      Dictionary style __contains__ method.
+     |  
+     |  __del__(self)
+     |  
+     |  __enter__(self)
+     |  
+     |  __exit__(self, *args)
+     |  
+     |  __getattr__(self, name)
+     |  
+     |  __getitem__(self, key)
+     |      Dictionary style indexing.
+     |  
+     |  __init__(self, fp=None, headers=None, outerboundary=b'', environ=environ({'INTELLIJ IDEA COMMUNITY EDITION': 'd:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;', 'PSEXECUTIONPOLICYPREFERENCE': 'RemoteSigned', 'TERM_SESSION_ID': '6d7a25f9-6228-4dab-a8d7-8cc7693f9501', 'NODE_OPTIONS': '--max_old_space_size=8192', 'PROGRAMW6432': 'C:\\Program Files', 'JRE_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1\\jre', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'FIG_JETBRAINS_SHELL_INTEGRATION': '1', 'GOPATH': 'C:\\Users\\AnQi1\\go', 'USERNAME': 'AnQi1', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\AnQi1', 'APACHE2_HOME': 'D:\\dev\\Apache24', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'MSI:Windows 10 Home China', 'QTJAVA': 'C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PROCESSOR_REVISION': '5e03', 'MAVEN_HOME': 'D:\\free\\apache-maven-3.6.0', 'IDEA_INITIAL_DIRECTORY': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin', 'PUBLIC': 'P:\\anqi\\users\\Public', 'PATH': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv/Scripts;C:\\Program Files\\Python39\\Scripts\\;C:\\Program Files\\Python39\\;D:\\dev\\selenium;D:\\dev\\vue2\\node_modules\\.bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk-17.0.1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Free\\7-Zip;D:\\Free\\phantomjs-2.1.1-windows\\bin;D:\\Free\\apache-tomcat-7.0.81-windows-x64\\bin;D:\\Free\\classExec-1.03b;D:\\Free\\gzip\\gzip124xN;D:\\Free\\md5;D:\\Free\\ttf2svg\\ttf2svg-master\\bin;C:\\Program Files (x86)\\WinMerge;C:\\Program Files (x86)\\Common Files\\Adobe\\AGL;C:\\Program Files (x86)\\Google\\Chrome\\Application;D:\\dev\\mysql-5.7.21-winx64\\bin;D:\\dev\\PHP_7_2_1;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;D:\\dev\\TDM-GCC-64\\bin;D:\\dev\\mingw\\bin;D:\\dev\\mingw\\msys\\1.0\\bin;D:\\dev\\doxygen\\bin;D:\\Free\\dmg2img v1.6.7;D:\\dev\\CMake\\bin;D:\\dev\\Pandoc\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\gauge\\bin;d:\\dev\\MiKTeX 2.9\\miktex\\bin\\x64\\;D:\\app\\Calibre2\\;D:\\free\\apache-maven-3.6.0\\bin;D:\\dev\\PuTTY\\;d:\\free;d:\\dev\\WinMerge;d:\\dev\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;D:\\free\\ffmpeg\\bin;D:\\Dev\\TortoiseSVN\\bin;D:\\dev\\opencv\\build\\java\\x64;D:\\dev\\Redis\\;d:\\app\\WinSCP\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\VSCodium\\bin;D:\\dev\\deno;D:\\dev\\Go\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.cargo\\bin;D:\\App\\Oracle\\VirtualBox\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;D:\\dev\\nvim-win64\\bin;D:\\dev\\微信web开发者工具\\dll;C:\\Pro;ram Files (x86)\\Microsoft\\Edge\\Application;D:\\App\\Mozilla Firefox;D:\\App\\Opera;C:\\Program Files\\Git\\cmd;C:\\Users\\AnQi1\\.cargo\\bin;C:\\Users\\AnQi1\\AppData\\Local\\pnpm;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;D:\\App\\�Ѻ�Ӱ��\\6.3.6.0;C:\\Users\\AnQi1\\.dotnet\\tools;D:\\App\\�Ѻ�Ӱ��\\6.5.8.1;C:\\Users\\AnQi1\\AppData\\Local\\atom\\bin;D:\\App\\搜狐影音\\6.5.12.0;d:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\Users\\AnQi1\\AppData\\Roaming\\npm;C:\\Users\\AnQi1\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\AnQi1\\go\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;;D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'HOMEDRIVE': 'C:', 'SESSIONNAME': 'Console', 'LOGONSERVER': '\\\\ANQISOFT01', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'HOMEPATH': '\\Users\\AnQi1', 'SYSTEMROOT': 'C:\\WINDOWS', 'MSMPI_BIN': 'C:\\Program Files\\Microsoft MPI\\Bin\\', 'CHOCOLATEYINSTALL': 'C:\\ProgramData\\chocolatey', 'VIRTUAL_ENV': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv', 'VS140COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\', 'NVM_HOME': 'd:\\dev\\nvm', 'LOCALAPPDATA': 'C:\\Users\\AnQi1\\AppData\\Local', 'WXDRIVE_START_ARGS': '--wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features=NetworkServiceInProcess', 'APPDATA': 'C:\\Users\\AnQi1\\AppData\\Roaming', 'OMP_NUM_THREADS': '8', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL', 'PSMODULEPATH': 'P:\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules', 'MOZ_PLUGIN_PATH': 'D:\\App\\Foxit Software\\Foxit PDF Reader\\Foxit PDF Reader\\plugins\\', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'ASL.LOG': 'Destination=file', 'OS': 'Windows_NT', 'NVM_SYMLINK': 'd:\\dev\\nodejs', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'NUMBER_OF_PROCESSORS': '8', 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1', 'SHPLAYER': 'D:\\App\\搜狐影音\\6.5.12.0', 'PROCESSOR_LEVEL': '6', 'CLASSPATH': '.;CLASSPATH=.;P:\\libs\\java\\jacob-1.19\\jacob.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\byte-buddy-1.7.9.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-codec-1.10.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-exec-1.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-logging-1.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\gson-2.8.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\guava-23.6-jre.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpclient-4.5.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpcore-4.4.6.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okhttp-3.9.1.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okio-1.13.0.jar;D:\\dev\\opencv\\build\\java\\opencv-451.jar;C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PYCHARM COMMUNITY EDITION': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;', 'USERDOMAIN_ROAMINGPROFILE': 'ANQISOFT01', 'WINDIR': 'C:\\WINDOWS', 'PROGRAMFILES': 'C:\\Program Files', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'VBOX_MSI_INSTALL_PATH': 'D:\\app\\Oracle\\VirtualBox\\', 'TEMP': 't:\\temp', 'TMP': 't:\\temp', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'ONEDRIVE': 'C:\\Users\\AnQi1\\OneDrive', 'MAVEN': 'D:\\free\\apache-maven-3.6.0\\bin', 'SYSTEMDRIVE': 'C:', 'USERDOMAIN': 'ANQISOFT01', 'COMPUTERNAME': 'ANQISOFT01', 'PROGRAMDATA': 'C:\\ProgramData', 'CHOCOLATEYLASTPATHUPDATE': '132939837380864710', 'NODE_PATH': 'd:\\dev\\node_modules', 'PNPM_HOME': 'C:\\Users\\AnQi1\\AppData\\Local\\pnpm', 'INTELLIJ IDEA': 'D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files'}), keep_blank_values=0, strict_parsing=0, limit=None, encoding='utf-8', errors='replace', max_num_fields=None, separator='&')
+     |      Constructor.  Read multipart/* until last part.
+     |      
+     |      Arguments, all optional:
+     |      
+     |      fp              : file pointer; default: sys.stdin.buffer
+     |          (not used when the request method is GET)
+     |          Can be :
+     |          1. a TextIOWrapper object
+     |          2. an object whose read() and readline() methods return bytes
+     |      
+     |      headers         : header dictionary-like object; default:
+     |          taken from environ as per CGI spec
+     |      
+     |      outerboundary   : terminating multipart boundary
+     |          (for internal use only)
+     |      
+     |      environ         : environment dictionary; default: os.environ
+     |      
+     |      keep_blank_values: flag indicating whether blank values in
+     |          percent-encoded forms should be treated as blank strings.
+     |          A true value indicates that blanks should be retained as
+     |          blank strings.  The default false value indicates that
+     |          blank values are to be ignored and treated as if they were
+     |          not included.
+     |      
+     |      strict_parsing: flag indicating what to do with parsing errors.
+     |          If false (the default), errors are silently ignored.
+     |          If true, errors raise a ValueError exception.
+     |      
+     |      limit : used internally to read parts of multipart/form-data forms,
+     |          to exit from the reading loop when reached. It is the difference
+     |          between the form content-length and the number of bytes already
+     |          read
+     |      
+     |      encoding, errors : the encoding and error handler used to decode the
+     |          binary stream to strings. Must be the same as the charset defined
+     |          for the page sending the form (content-type : meta http-equiv or
+     |          header)
+     |      
+     |      max_num_fields: int. If set, then __init__ throws a ValueError
+     |          if there are more than n fields read by parse_qsl().
+     |  
+     |  __iter__(self)
+     |  
+     |  __len__(self)
+     |      Dictionary style len(x) support.
+     |  
+     |  __repr__(self)
+     |      Return a printable representation.
+     |  
+     |  getfirst(self, key, default=None)
+     |      Return the first value received.
+     |  
+     |  getlist(self, key)
+     |      Return list of received values.
+     |  
+     |  getvalue(self, key, default=None)
+     |      Dictionary style get() method, including 'value' lookup.
+     |  
+     |  keys(self)
+     |      Dictionary style keys() method.
+     |  
+     |  make_file(self)
+     |      Overridable: return a readable & writable file.
+     |      
+     |      The file will be used as follows:
+     |      - data is written to it
+     |      - seek(0)
+     |      - data is read from it
+     |      
+     |      The file is opened in binary mode for files, in text mode
+     |      for other fields
+     |      
+     |      This version opens a temporary file for reading and writing,
+     |      and immediately deletes (unlinks) it.  The trick (on Unix!) is
+     |      that the file can still be used, but it can't be opened by
+     |      another process, and it will automatically be deleted when it
+     |      is closed or when the current process terminates.
+     |      
+     |      If you want a more permanent file, you derive a class which
+     |      overrides this method.  If you want a visible temporary file
+     |      that is nevertheless automatically deleted when the script
+     |      terminates, try defining a __del__ method in a derived class
+     |      which unlinks the temporary files you have created.
+     |  
+     |  read_binary(self)
+     |      Internal: read binary data.
+     |  
+     |  read_lines(self)
+     |      Internal: read lines until EOF or outerboundary.
+     |  
+     |  read_lines_to_eof(self)
+     |      Internal: read lines until EOF.
+     |  
+     |  read_lines_to_outerboundary(self)
+     |      Internal: read lines until outerboundary.
+     |      Data is read as bytes: boundaries and line ends must be converted
+     |      to bytes for comparisons.
+     |  
+     |  read_multi(self, environ, keep_blank_values, strict_parsing)
+     |      Internal: read a part that is itself multipart.
+     |  
+     |  read_single(self)
+     |      Internal: read an atomic part.
+     |  
+     |  read_urlencoded(self)
+     |      Internal: read data in query string format.
+     |  
+     |  skip_lines(self)
+     |      Internal: skip lines until outer boundary if defined.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  FieldStorageClass = None
+     |  
+     |  bufsize = 8192
+    
+    class MiniFieldStorage(builtins.object)
+     |  MiniFieldStorage(name, value)
+     |  
+     |  Like FieldStorage, for use when no file uploads are possible.
+     |  
+     |  Methods defined here:
+     |  
+     |  __init__(self, name, value)
+     |      Constructor from field name and value.
+     |  
+     |  __repr__(self)
+     |      Return printable representation.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  disposition = None
+     |  
+     |  disposition_options = {}
+     |  
+     |  file = None
+     |  
+     |  filename = None
+     |  
+     |  headers = {}
+     |  
+     |  list = None
+     |  
+     |  type = None
+     |  
+     |  type_options = {}
+
+FUNCTIONS
+    parse(fp=None, environ=environ({'INTELLIJ IDEA COMMUNITY EDITION': 'd:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;', 'PSEXECUTIONPOLICYPREFERENCE': 'RemoteSigned', 'TERM_SESSION_ID': '6d7a25f9-6228-4dab-a8d7-8cc7693f9501', 'NODE_OPTIONS': '--max_old_space_size=8192', 'PROGRAMW6432': 'C:\\Program Files', 'JRE_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1\\jre', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'FIG_JETBRAINS_SHELL_INTEGRATION': '1', 'GOPATH': 'C:\\Users\\AnQi1\\go', 'USERNAME': 'AnQi1', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\AnQi1', 'APACHE2_HOME': 'D:\\dev\\Apache24', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'MSI:Windows 10 Home China', 'QTJAVA': 'C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PROCESSOR_REVISION': '5e03', 'MAVEN_HOME': 'D:\\free\\apache-maven-3.6.0', 'IDEA_INITIAL_DIRECTORY': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin', 'PUBLIC': 'P:\\anqi\\users\\Public', 'PATH': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv/Scripts;C:\\Program Files\\Python39\\Scripts\\;C:\\Program Files\\Python39\\;D:\\dev\\selenium;D:\\dev\\vue2\\node_modules\\.bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk-17.0.1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Free\\7-Zip;D:\\Free\\phantomjs-2.1.1-windows\\bin;D:\\Free\\apache-tomcat-7.0.81-windows-x64\\bin;D:\\Free\\classExec-1.03b;D:\\Free\\gzip\\gzip124xN;D:\\Free\\md5;D:\\Free\\ttf2svg\\ttf2svg-master\\bin;C:\\Program Files (x86)\\WinMerge;C:\\Program Files (x86)\\Common Files\\Adobe\\AGL;C:\\Program Files (x86)\\Google\\Chrome\\Application;D:\\dev\\mysql-5.7.21-winx64\\bin;D:\\dev\\PHP_7_2_1;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;D:\\dev\\TDM-GCC-64\\bin;D:\\dev\\mingw\\bin;D:\\dev\\mingw\\msys\\1.0\\bin;D:\\dev\\doxygen\\bin;D:\\Free\\dmg2img v1.6.7;D:\\dev\\CMake\\bin;D:\\dev\\Pandoc\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\gauge\\bin;d:\\dev\\MiKTeX 2.9\\miktex\\bin\\x64\\;D:\\app\\Calibre2\\;D:\\free\\apache-maven-3.6.0\\bin;D:\\dev\\PuTTY\\;d:\\free;d:\\dev\\WinMerge;d:\\dev\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;D:\\free\\ffmpeg\\bin;D:\\Dev\\TortoiseSVN\\bin;D:\\dev\\opencv\\build\\java\\x64;D:\\dev\\Redis\\;d:\\app\\WinSCP\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\VSCodium\\bin;D:\\dev\\deno;D:\\dev\\Go\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.cargo\\bin;D:\\App\\Oracle\\VirtualBox\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;D:\\dev\\nvim-win64\\bin;D:\\dev\\微信web开发者工具\\dll;C:\\Pro;ram Files (x86)\\Microsoft\\Edge\\Application;D:\\App\\Mozilla Firefox;D:\\App\\Opera;C:\\Program Files\\Git\\cmd;C:\\Users\\AnQi1\\.cargo\\bin;C:\\Users\\AnQi1\\AppData\\Local\\pnpm;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;D:\\App\\�Ѻ�Ӱ��\\6.3.6.0;C:\\Users\\AnQi1\\.dotnet\\tools;D:\\App\\�Ѻ�Ӱ��\\6.5.8.1;C:\\Users\\AnQi1\\AppData\\Local\\atom\\bin;D:\\App\\搜狐影音\\6.5.12.0;d:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\Users\\AnQi1\\AppData\\Roaming\\npm;C:\\Users\\AnQi1\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\AnQi1\\go\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;;D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'HOMEDRIVE': 'C:', 'SESSIONNAME': 'Console', 'LOGONSERVER': '\\\\ANQISOFT01', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'HOMEPATH': '\\Users\\AnQi1', 'SYSTEMROOT': 'C:\\WINDOWS', 'MSMPI_BIN': 'C:\\Program Files\\Microsoft MPI\\Bin\\', 'CHOCOLATEYINSTALL': 'C:\\ProgramData\\chocolatey', 'VIRTUAL_ENV': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv', 'VS140COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\', 'NVM_HOME': 'd:\\dev\\nvm', 'LOCALAPPDATA': 'C:\\Users\\AnQi1\\AppData\\Local', 'WXDRIVE_START_ARGS': '--wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features=NetworkServiceInProcess', 'APPDATA': 'C:\\Users\\AnQi1\\AppData\\Roaming', 'OMP_NUM_THREADS': '8', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL', 'PSMODULEPATH': 'P:\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules', 'MOZ_PLUGIN_PATH': 'D:\\App\\Foxit Software\\Foxit PDF Reader\\Foxit PDF Reader\\plugins\\', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'ASL.LOG': 'Destination=file', 'OS': 'Windows_NT', 'NVM_SYMLINK': 'd:\\dev\\nodejs', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'NUMBER_OF_PROCESSORS': '8', 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1', 'SHPLAYER': 'D:\\App\\搜狐影音\\6.5.12.0', 'PROCESSOR_LEVEL': '6', 'CLASSPATH': '.;CLASSPATH=.;P:\\libs\\java\\jacob-1.19\\jacob.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\byte-buddy-1.7.9.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-codec-1.10.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-exec-1.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-logging-1.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\gson-2.8.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\guava-23.6-jre.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpclient-4.5.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpcore-4.4.6.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okhttp-3.9.1.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okio-1.13.0.jar;D:\\dev\\opencv\\build\\java\\opencv-451.jar;C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PYCHARM COMMUNITY EDITION': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;', 'USERDOMAIN_ROAMINGPROFILE': 'ANQISOFT01', 'WINDIR': 'C:\\WINDOWS', 'PROGRAMFILES': 'C:\\Program Files', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'VBOX_MSI_INSTALL_PATH': 'D:\\app\\Oracle\\VirtualBox\\', 'TEMP': 't:\\temp', 'TMP': 't:\\temp', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'ONEDRIVE': 'C:\\Users\\AnQi1\\OneDrive', 'MAVEN': 'D:\\free\\apache-maven-3.6.0\\bin', 'SYSTEMDRIVE': 'C:', 'USERDOMAIN': 'ANQISOFT01', 'COMPUTERNAME': 'ANQISOFT01', 'PROGRAMDATA': 'C:\\ProgramData', 'CHOCOLATEYLASTPATHUPDATE': '132939837380864710', 'NODE_PATH': 'd:\\dev\\node_modules', 'PNPM_HOME': 'C:\\Users\\AnQi1\\AppData\\Local\\pnpm', 'INTELLIJ IDEA': 'D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files'}), keep_blank_values=0, strict_parsing=0, separator='&')
+        Parse a query in the environment or from a file (default stdin)
+        
+        Arguments, all optional:
+        
+        fp              : file pointer; default: sys.stdin.buffer
+        
+        environ         : environment dictionary; default: os.environ
+        
+        keep_blank_values: flag indicating whether blank values in
+            percent-encoded forms should be treated as blank strings.
+            A true value indicates that blanks should be retained as
+            blank strings.  The default false value indicates that
+            blank values are to be ignored and treated as if they were
+            not included.
+        
+        strict_parsing: flag indicating what to do with parsing errors.
+            If false (the default), errors are silently ignored.
+            If true, errors raise a ValueError exception.
+        
+        separator: str. The symbol to use for separating the query arguments.
+            Defaults to &.
+    
+    parse_header(line)
+        Parse a Content-type like header.
+        
+        Return the main content-type and a dictionary of options.
+    
+    parse_multipart(fp, pdict, encoding='utf-8', errors='replace', separator='&')
+        Parse multipart input.
+        
+        Arguments:
+        fp   : input file
+        pdict: dictionary containing other parameters of content-type header
+        encoding, errors: request encoding and error handler, passed to
+            FieldStorage
+        
+        Returns a dictionary just like parse_qs(): keys are the field names, each
+        value is a list of values for that field. For non-file fields, the value
+        is a list of strings.
+    
+    print_arguments()
+    
+    print_directory()
+        Dump the current directory as HTML.
+    
+    print_environ(environ=environ({'INTELLIJ IDEA COMMUNITY EDITION': 'd:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;', 'PSEXECUTIONPOLICYPREFERENCE': 'RemoteSigned', 'TERM_SESSION_ID': '6d7a25f9-6228-4dab-a8d7-8cc7693f9501', 'NODE_OPTIONS': '--max_old_space_size=8192', 'PROGRAMW6432': 'C:\\Program Files', 'JRE_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1\\jre', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'FIG_JETBRAINS_SHELL_INTEGRATION': '1', 'GOPATH': 'C:\\Users\\AnQi1\\go', 'USERNAME': 'AnQi1', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\AnQi1', 'APACHE2_HOME': 'D:\\dev\\Apache24', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'MSI:Windows 10 Home China', 'QTJAVA': 'C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PROCESSOR_REVISION': '5e03', 'MAVEN_HOME': 'D:\\free\\apache-maven-3.6.0', 'IDEA_INITIAL_DIRECTORY': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin', 'PUBLIC': 'P:\\anqi\\users\\Public', 'PATH': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv/Scripts;C:\\Program Files\\Python39\\Scripts\\;C:\\Program Files\\Python39\\;D:\\dev\\selenium;D:\\dev\\vue2\\node_modules\\.bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk-17.0.1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Free\\7-Zip;D:\\Free\\phantomjs-2.1.1-windows\\bin;D:\\Free\\apache-tomcat-7.0.81-windows-x64\\bin;D:\\Free\\classExec-1.03b;D:\\Free\\gzip\\gzip124xN;D:\\Free\\md5;D:\\Free\\ttf2svg\\ttf2svg-master\\bin;C:\\Program Files (x86)\\WinMerge;C:\\Program Files (x86)\\Common Files\\Adobe\\AGL;C:\\Program Files (x86)\\Google\\Chrome\\Application;D:\\dev\\mysql-5.7.21-winx64\\bin;D:\\dev\\PHP_7_2_1;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;D:\\dev\\TDM-GCC-64\\bin;D:\\dev\\mingw\\bin;D:\\dev\\mingw\\msys\\1.0\\bin;D:\\dev\\doxygen\\bin;D:\\Free\\dmg2img v1.6.7;D:\\dev\\CMake\\bin;D:\\dev\\Pandoc\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\gauge\\bin;d:\\dev\\MiKTeX 2.9\\miktex\\bin\\x64\\;D:\\app\\Calibre2\\;D:\\free\\apache-maven-3.6.0\\bin;D:\\dev\\PuTTY\\;d:\\free;d:\\dev\\WinMerge;d:\\dev\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;D:\\free\\ffmpeg\\bin;D:\\Dev\\TortoiseSVN\\bin;D:\\dev\\opencv\\build\\java\\x64;D:\\dev\\Redis\\;d:\\app\\WinSCP\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\VSCodium\\bin;D:\\dev\\deno;D:\\dev\\Go\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.cargo\\bin;D:\\App\\Oracle\\VirtualBox\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;D:\\dev\\nvim-win64\\bin;D:\\dev\\微信web开发者工具\\dll;C:\\Pro;ram Files (x86)\\Microsoft\\Edge\\Application;D:\\App\\Mozilla Firefox;D:\\App\\Opera;C:\\Program Files\\Git\\cmd;C:\\Users\\AnQi1\\.cargo\\bin;C:\\Users\\AnQi1\\AppData\\Local\\pnpm;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;D:\\App\\�Ѻ�Ӱ��\\6.3.6.0;C:\\Users\\AnQi1\\.dotnet\\tools;D:\\App\\�Ѻ�Ӱ��\\6.5.8.1;C:\\Users\\AnQi1\\AppData\\Local\\atom\\bin;D:\\App\\搜狐影音\\6.5.12.0;d:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\Users\\AnQi1\\AppData\\Roaming\\npm;C:\\Users\\AnQi1\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\AnQi1\\go\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;;D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'HOMEDRIVE': 'C:', 'SESSIONNAME': 'Console', 'LOGONSERVER': '\\\\ANQISOFT01', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'HOMEPATH': '\\Users\\AnQi1', 'SYSTEMROOT': 'C:\\WINDOWS', 'MSMPI_BIN': 'C:\\Program Files\\Microsoft MPI\\Bin\\', 'CHOCOLATEYINSTALL': 'C:\\ProgramData\\chocolatey', 'VIRTUAL_ENV': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv', 'VS140COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\', 'NVM_HOME': 'd:\\dev\\nvm', 'LOCALAPPDATA': 'C:\\Users\\AnQi1\\AppData\\Local', 'WXDRIVE_START_ARGS': '--wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features=NetworkServiceInProcess', 'APPDATA': 'C:\\Users\\AnQi1\\AppData\\Roaming', 'OMP_NUM_THREADS': '8', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL', 'PSMODULEPATH': 'P:\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules', 'MOZ_PLUGIN_PATH': 'D:\\App\\Foxit Software\\Foxit PDF Reader\\Foxit PDF Reader\\plugins\\', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'ASL.LOG': 'Destination=file', 'OS': 'Windows_NT', 'NVM_SYMLINK': 'd:\\dev\\nodejs', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'NUMBER_OF_PROCESSORS': '8', 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1', 'SHPLAYER': 'D:\\App\\搜狐影音\\6.5.12.0', 'PROCESSOR_LEVEL': '6', 'CLASSPATH': '.;CLASSPATH=.;P:\\libs\\java\\jacob-1.19\\jacob.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\byte-buddy-1.7.9.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-codec-1.10.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-exec-1.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-logging-1.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\gson-2.8.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\guava-23.6-jre.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpclient-4.5.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpcore-4.4.6.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okhttp-3.9.1.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okio-1.13.0.jar;D:\\dev\\opencv\\build\\java\\opencv-451.jar;C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PYCHARM COMMUNITY EDITION': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;', 'USERDOMAIN_ROAMINGPROFILE': 'ANQISOFT01', 'WINDIR': 'C:\\WINDOWS', 'PROGRAMFILES': 'C:\\Program Files', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'VBOX_MSI_INSTALL_PATH': 'D:\\app\\Oracle\\VirtualBox\\', 'TEMP': 't:\\temp', 'TMP': 't:\\temp', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'ONEDRIVE': 'C:\\Users\\AnQi1\\OneDrive', 'MAVEN': 'D:\\free\\apache-maven-3.6.0\\bin', 'SYSTEMDRIVE': 'C:', 'USERDOMAIN': 'ANQISOFT01', 'COMPUTERNAME': 'ANQISOFT01', 'PROGRAMDATA': 'C:\\ProgramData', 'CHOCOLATEYLASTPATHUPDATE': '132939837380864710', 'NODE_PATH': 'd:\\dev\\node_modules', 'PNPM_HOME': 'C:\\Users\\AnQi1\\AppData\\Local\\pnpm', 'INTELLIJ IDEA': 'D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files'}))
+        Dump the shell environment as HTML.
+    
+    print_environ_usage()
+        Dump a list of environment variables used by CGI as HTML.
+    
+    print_exception(type=None, value=None, tb=None, limit=None)
+    
+    print_form(form)
+        Dump the contents of a form as HTML.
+    
+    test(environ=environ({'INTELLIJ IDEA COMMUNITY EDITION': 'd:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;', 'PSEXECUTIONPOLICYPREFERENCE': 'RemoteSigned', 'TERM_SESSION_ID': '6d7a25f9-6228-4dab-a8d7-8cc7693f9501', 'NODE_OPTIONS': '--max_old_space_size=8192', 'PROGRAMW6432': 'C:\\Program Files', 'JRE_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1\\jre', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'FIG_JETBRAINS_SHELL_INTEGRATION': '1', 'GOPATH': 'C:\\Users\\AnQi1\\go', 'USERNAME': 'AnQi1', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\AnQi1', 'APACHE2_HOME': 'D:\\dev\\Apache24', 'POWERSHELL_DISTRIBUTION_CHANNEL': 'MSI:Windows 10 Home China', 'QTJAVA': 'C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PROCESSOR_REVISION': '5e03', 'MAVEN_HOME': 'D:\\free\\apache-maven-3.6.0', 'IDEA_INITIAL_DIRECTORY': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin', 'PUBLIC': 'P:\\anqi\\users\\Public', 'PATH': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv/Scripts;C:\\Program Files\\Python39\\Scripts\\;C:\\Program Files\\Python39\\;D:\\dev\\selenium;D:\\dev\\vue2\\node_modules\\.bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk-17.0.1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Microsoft MPI\\Bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\Free\\7-Zip;D:\\Free\\phantomjs-2.1.1-windows\\bin;D:\\Free\\apache-tomcat-7.0.81-windows-x64\\bin;D:\\Free\\classExec-1.03b;D:\\Free\\gzip\\gzip124xN;D:\\Free\\md5;D:\\Free\\ttf2svg\\ttf2svg-master\\bin;C:\\Program Files (x86)\\WinMerge;C:\\Program Files (x86)\\Common Files\\Adobe\\AGL;C:\\Program Files (x86)\\Google\\Chrome\\Application;D:\\dev\\mysql-5.7.21-winx64\\bin;D:\\dev\\PHP_7_2_1;C:\\Program Files\\MySQL\\MySQL Utilities 1.6\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;D:\\dev\\TDM-GCC-64\\bin;D:\\dev\\mingw\\bin;D:\\dev\\mingw\\msys\\1.0\\bin;D:\\dev\\doxygen\\bin;D:\\Free\\dmg2img v1.6.7;D:\\dev\\CMake\\bin;D:\\dev\\Pandoc\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\gauge\\bin;d:\\dev\\MiKTeX 2.9\\miktex\\bin\\x64\\;D:\\app\\Calibre2\\;D:\\free\\apache-maven-3.6.0\\bin;D:\\dev\\PuTTY\\;d:\\free;d:\\dev\\WinMerge;d:\\dev\\Microsoft VS Code\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;D:\\free\\ffmpeg\\bin;D:\\Dev\\TortoiseSVN\\bin;D:\\dev\\opencv\\build\\java\\x64;D:\\dev\\Redis\\;d:\\app\\WinSCP\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\VSCodium\\bin;D:\\dev\\deno;D:\\dev\\Go\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\.cargo\\bin;D:\\App\\Oracle\\VirtualBox\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;D:\\dev\\nvim-win64\\bin;D:\\dev\\微信web开发者工具\\dll;C:\\Pro;ram Files (x86)\\Microsoft\\Edge\\Application;D:\\App\\Mozilla Firefox;D:\\App\\Opera;C:\\Program Files\\Git\\cmd;C:\\Users\\AnQi1\\.cargo\\bin;C:\\Users\\AnQi1\\AppData\\Local\\pnpm;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;D:\\App\\�Ѻ�Ӱ��\\6.3.6.0;C:\\Users\\AnQi1\\.dotnet\\tools;D:\\App\\�Ѻ�Ӱ��\\6.5.8.1;C:\\Users\\AnQi1\\AppData\\Local\\atom\\bin;D:\\App\\搜狐影音\\6.5.12.0;d:\\dev\\JetBrains\\IntelliJ IDEA Community Edition 2023.1.1\\bin;;d:\\dev\\nvm;d:\\dev\\nodejs;C:\\Users\\AnQi1\\AppData\\Roaming\\npm;C:\\Users\\AnQi1\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\AnQi1\\go\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;;D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'HOMEDRIVE': 'C:', 'SESSIONNAME': 'Console', 'LOGONSERVER': '\\\\ANQISOFT01', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'HOMEPATH': '\\Users\\AnQi1', 'SYSTEMROOT': 'C:\\WINDOWS', 'MSMPI_BIN': 'C:\\Program Files\\Microsoft MPI\\Bin\\', 'CHOCOLATEYINSTALL': 'C:\\ProgramData\\chocolatey', 'VIRTUAL_ENV': 'P:\\anqi\\Desktop\\tech\\python\\projects\\help\\venv', 'VS140COMNTOOLS': 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\', 'NVM_HOME': 'd:\\dev\\nvm', 'LOCALAPPDATA': 'C:\\Users\\AnQi1\\AppData\\Local', 'WXDRIVE_START_ARGS': '--wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features=NetworkServiceInProcess', 'APPDATA': 'C:\\Users\\AnQi1\\AppData\\Roaming', 'OMP_NUM_THREADS': '8', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL', 'PSMODULEPATH': 'P:\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules', 'MOZ_PLUGIN_PATH': 'D:\\App\\Foxit Software\\Foxit PDF Reader\\Foxit PDF Reader\\plugins\\', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'ASL.LOG': 'Destination=file', 'OS': 'Windows_NT', 'NVM_SYMLINK': 'd:\\dev\\nodejs', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'NUMBER_OF_PROCESSORS': '8', 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-17.0.1', 'SHPLAYER': 'D:\\App\\搜狐影音\\6.5.12.0', 'PROCESSOR_LEVEL': '6', 'CLASSPATH': '.;CLASSPATH=.;P:\\libs\\java\\jacob-1.19\\jacob.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\byte-buddy-1.7.9.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-codec-1.10.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-exec-1.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\commons-logging-1.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\gson-2.8.2.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\guava-23.6-jre.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpclient-4.5.3.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\httpcore-4.4.6.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okhttp-3.9.1.jar;P:\\libs\\java\\selenium-java-3.9.1\\libs\\okio-1.13.0.jar;D:\\dev\\opencv\\build\\java\\opencv-451.jar;C:\\Program Files (x86)\\QuickTime\\QTSystem\\QTJava.zip', 'PYCHARM COMMUNITY EDITION': 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2023.1.1\\bin;', 'USERDOMAIN_ROAMINGPROFILE': 'ANQISOFT01', 'WINDIR': 'C:\\WINDOWS', 'PROGRAMFILES': 'C:\\Program Files', 'COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'VBOX_MSI_INSTALL_PATH': 'D:\\app\\Oracle\\VirtualBox\\', 'TEMP': 't:\\temp', 'TMP': 't:\\temp', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'ONEDRIVE': 'C:\\Users\\AnQi1\\OneDrive', 'MAVEN': 'D:\\free\\apache-maven-3.6.0\\bin', 'SYSTEMDRIVE': 'C:', 'USERDOMAIN': 'ANQISOFT01', 'COMPUTERNAME': 'ANQISOFT01', 'PROGRAMDATA': 'C:\\ProgramData', 'CHOCOLATEYLASTPATHUPDATE': '132939837380864710', 'NODE_PATH': 'd:\\dev\\node_modules', 'PNPM_HOME': 'C:\\Users\\AnQi1\\AppData\\Local\\pnpm', 'INTELLIJ IDEA': 'D:\\dev\\JetBrains\\IntelliJ IDEA 2023.1.1\\bin;', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files'}))
+        Robust test CGI script, usable as main program.
+        
+        Write minimal HTTP headers and dump all information provided to
+        the script in HTML form.
+
+DATA
+    __all__ = ['MiniFieldStorage', 'FieldStorage', 'parse', 'parse_multipa...
+
+VERSION
+    2.6
+
+FILE
+    c:\program files\python39\lib\cgi.py
+
+

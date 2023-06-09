@@ -1,0 +1,94 @@
+Help on module token:
+
+NAME
+    token - Token constants.
+
+MODULE REFERENCE
+    https://docs.python.org/3.9/library/token
+    
+    The following documentation is automatically generated from the Python
+    source files.  It may be incomplete, incorrect or include features that
+    are considered implementation detail and may vary between Python
+    implementations.  When in doubt, consult the module reference at the
+    location listed above.
+
+FUNCTIONS
+    ISEOF(x)
+    
+    ISNONTERMINAL(x)
+    
+    ISTERMINAL(x)
+
+DATA
+    AMPER = 19
+    AMPEREQUAL = 41
+    ASYNC = 56
+    AT = 49
+    ATEQUAL = 50
+    AWAIT = 55
+    CIRCUMFLEX = 32
+    CIRCUMFLEXEQUAL = 43
+    COLON = 11
+    COLONEQUAL = 53
+    COMMA = 12
+    COMMENT = 60
+    DEDENT = 6
+    DOT = 23
+    DOUBLESLASH = 47
+    DOUBLESLASHEQUAL = 48
+    DOUBLESTAR = 35
+    DOUBLESTAREQUAL = 46
+    ELLIPSIS = 52
+    ENCODING = 62
+    ENDMARKER = 0
+    EQEQUAL = 27
+    EQUAL = 22
+    ERRORTOKEN = 59
+    GREATER = 21
+    GREATEREQUAL = 30
+    INDENT = 5
+    LBRACE = 25
+    LEFTSHIFT = 33
+    LEFTSHIFTEQUAL = 44
+    LESS = 20
+    LESSEQUAL = 29
+    LPAR = 7
+    LSQB = 9
+    MINEQUAL = 37
+    MINUS = 15
+    NAME = 1
+    NEWLINE = 4
+    NL = 61
+    NOTEQUAL = 28
+    NT_OFFSET = 256
+    NUMBER = 2
+    N_TOKENS = 63
+    OP = 54
+    PERCENT = 24
+    PERCENTEQUAL = 40
+    PLUS = 14
+    PLUSEQUAL = 36
+    RARROW = 51
+    RBRACE = 26
+    RIGHTSHIFT = 34
+    RIGHTSHIFTEQUAL = 45
+    RPAR = 8
+    RSQB = 10
+    SEMI = 13
+    SLASH = 17
+    SLASHEQUAL = 39
+    STAR = 16
+    STAREQUAL = 38
+    STRING = 3
+    TILDE = 31
+    TYPE_COMMENT = 58
+    TYPE_IGNORE = 57
+    VBAR = 18
+    VBAREQUAL = 42
+    __all__ = ['tok_name', 'ISTERMINAL', 'ISNONTERMINAL', 'ISEOF', 'ENDMAR...
+    tok_name = {0: 'ENDMARKER', 1: 'NAME', 2: 'NUMBER', 3: 'STRING', 4: 'N...
+
+FILE
+    c:\program files\python39\lib\token.py
+
+

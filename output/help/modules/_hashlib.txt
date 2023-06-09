@@ -1,0 +1,253 @@
+Help on module _hashlib:
+
+NAME
+    _hashlib - OpenSSL interface for hashlib module
+
+CLASSES
+    builtins.object
+        HASH
+            HASHXOF
+        HMAC
+    
+    class HASH(builtins.object)
+     |  A hash is an object used to calculate a checksum of a string of information.
+     |  
+     |  Methods:
+     |  
+     |  update() -- updates the current digest with an additional string
+     |  digest() -- return the current digest value
+     |  hexdigest() -- return the current digest as a string of hexadecimal digits
+     |  copy() -- return a copy of the current hash object
+     |  
+     |  Attributes:
+     |  
+     |  name -- the hash algorithm being used by this object
+     |  digest_size -- number of bytes in this hashes output
+     |  
+     |  Methods defined here:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  copy(self, /)
+     |      Return a copy of the hash object.
+     |  
+     |  digest(self, /)
+     |      Return the digest value as a bytes object.
+     |  
+     |  hexdigest(self, /)
+     |      Return the digest value as a string of hexadecimal digits.
+     |  
+     |  update(self, obj, /)
+     |      Update this hash object's state with the provided string.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  block_size
+     |  
+     |  digest_size
+     |  
+     |  name
+    
+    class HASHXOF(HASH)
+     |  A hash is an object used to calculate a checksum of a string of information.
+     |  
+     |  Methods:
+     |  
+     |  update() -- updates the current digest with an additional string
+     |  digest(length) -- return the current digest value
+     |  hexdigest(length) -- return the current digest as a string of hexadecimal digits
+     |  copy() -- return a copy of the current hash object
+     |  
+     |  Attributes:
+     |  
+     |  name -- the hash algorithm being used by this object
+     |  digest_size -- number of bytes in this hashes output
+     |  
+     |  Method resolution order:
+     |      HASHXOF
+     |      HASH
+     |      builtins.object
+     |  
+     |  Methods defined here:
+     |  
+     |  digest(self, /, length)
+     |      Return the digest value as a bytes object.
+     |  
+     |  hexdigest(self, /, length)
+     |      Return the digest value as a string of hexadecimal digits.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  digest_size
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from HASH:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  copy(self, /)
+     |      Return a copy of the hash object.
+     |  
+     |  update(self, obj, /)
+     |      Update this hash object's state with the provided string.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from HASH:
+     |  
+     |  block_size
+     |  
+     |  name
+    
+    class HMAC(builtins.object)
+     |  The object used to calculate HMAC of a message.
+     |  
+     |  Methods:
+     |  
+     |  update() -- updates the current digest with an additional string
+     |  digest() -- return the current digest value
+     |  hexdigest() -- return the current digest as a string of hexadecimal digits
+     |  copy() -- return a copy of the current hash object
+     |  
+     |  Attributes:
+     |  
+     |  name -- the name, including the hash algorithm used by this object
+     |  digest_size -- number of bytes in digest() output
+     |  
+     |  Methods defined here:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  copy(self, /)
+     |      Return a copy ("clone") of the HMAC object.
+     |  
+     |  digest(self, /)
+     |      Return the digest of the bytes passed to the update() method so far.
+     |  
+     |  hexdigest(self, /)
+     |      Return hexadecimal digest of the bytes passed to the update() method so far.
+     |      
+     |      This may be used to exchange the value safely in email or other non-binary
+     |      environments.
+     |  
+     |  update(self, /, msg)
+     |      Update the HMAC object with msg.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  block_size
+     |  
+     |  digest_size
+     |  
+     |  name
+
+FUNCTIONS
+    compare_digest(a, b, /)
+        Return 'a == b'.
+        
+        This function uses an approach designed to prevent
+        timing analysis, making it appropriate for cryptography.
+        
+        a and b must both be of the same type: either str (ASCII only),
+        or any bytes-like object.
+        
+        Note: If a and b are of different lengths, or if an error occurs,
+        a timing attack could theoretically reveal information about the
+        types and lengths of a and b--but not their values.
+    
+    get_fips_mode()
+        Determine the OpenSSL FIPS mode of operation.
+        
+        For OpenSSL 3.0.0 and newer it returns the state of the default provider
+        in the default OSSL context. It's not quite the same as FIPS_mode() but good
+        enough for unittests.
+        
+        Effectively any non-zero return value indicates FIPS mode;
+        values other than 1 may have additional significance.
+    
+    hmac_digest(key, msg, digest)
+        Single-shot HMAC.
+    
+    hmac_new(key, msg=b'', digestmod=None)
+        Return a new hmac object.
+    
+    new(name, string=b'', *, usedforsecurity=True)
+        Return a new hash object using the named algorithm.
+        
+        An optional string argument may be provided and will be
+        automatically hashed.
+        
+        The MD5 and SHA1 algorithms are always supported.
+    
+    openssl_md5(string=b'', *, usedforsecurity=True)
+        Returns a md5 hash object; optionally initialized with a string
+    
+    openssl_sha1(string=b'', *, usedforsecurity=True)
+        Returns a sha1 hash object; optionally initialized with a string
+    
+    openssl_sha224(string=b'', *, usedforsecurity=True)
+        Returns a sha224 hash object; optionally initialized with a string
+    
+    openssl_sha256(string=b'', *, usedforsecurity=True)
+        Returns a sha256 hash object; optionally initialized with a string
+    
+    openssl_sha384(string=b'', *, usedforsecurity=True)
+        Returns a sha384 hash object; optionally initialized with a string
+    
+    openssl_sha3_224(string=b'', *, usedforsecurity=True)
+        Returns a sha3-224 hash object; optionally initialized with a string
+    
+    openssl_sha3_256(string=b'', *, usedforsecurity=True)
+        Returns a sha3-256 hash object; optionally initialized with a string
+    
+    openssl_sha3_384(string=b'', *, usedforsecurity=True)
+        Returns a sha3-384 hash object; optionally initialized with a string
+    
+    openssl_sha3_512(string=b'', *, usedforsecurity=True)
+        Returns a sha3-512 hash object; optionally initialized with a string
+    
+    openssl_sha512(string=b'', *, usedforsecurity=True)
+        Returns a sha512 hash object; optionally initialized with a string
+    
+    openssl_shake_128(string=b'', *, usedforsecurity=True)
+        Returns a shake-128 variable hash object; optionally initialized with a string
+    
+    openssl_shake_256(string=b'', *, usedforsecurity=True)
+        Returns a shake-256 variable hash object; optionally initialized with a string
+    
+    pbkdf2_hmac(hash_name, password, salt, iterations, dklen=None)
+        Password based key derivation function 2 (PKCS #5 v2.0) with HMAC as pseudorandom function.
+    
+    scrypt(password, *, salt=None, n=None, r=None, p=None, maxmem=0, dklen=64)
+        scrypt password-based key derivation function.
+
+DATA
+    openssl_md_meth_names = frozenset({'blake2b', 'blake2s', 'md4', 'md5',...
+
+FILE
+    c:\program files\python39\dlls\_hashlib.pyd
+
+
