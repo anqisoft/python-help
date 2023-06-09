@@ -1,0 +1,18 @@
+cd /p/anqi/Desktop/tech/python/projects
+git clone git+ssh://git@github.com/anqisoft/python-help
+mv python-help help
+cd help
+echo >> .git/config && echo [user] >> .git/config && echo \ \ name = anqisoft >> .git/config && echo \ \ email = anqisoft@gmail.com >> .git/config
+=====================================================================================================================================================================
+git add . && git commit -m "Initial commit" && git push origin main
+git add -f ./README.md ./git.log && git commit -m "Update git.log and readme.md" && git push origin main
+=====================================================================================================================================================================
+
+=====================================================================================================================================================================
+git pull origin main --allow-unrelated-histories
+git push origin main
+=====================================================================================================================================================================
+# git init && touch .gitignore
+# git clone git+ssh://git@github.com/anqisoft/python-help
+# git remote add origin git+ssh://git@github.com/anqisoft/python-help
+=====================================================================================================================================================================
