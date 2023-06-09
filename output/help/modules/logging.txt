@@ -1211,7 +1211,7 @@ FUNCTIONS
         define __init__() such that only a name argument is required, and the
         __init__() should call Logger.__init__()
     
-    shutdown(handlerList=[<weakref at 0x00000214490E9EA0; to '_StderrHandler' at 0x00000214490EABE0>, <weakref at 0x000002144CA77D10; to 'NullHandler' at 0x000002144CAC8460>, <weakref at 0x000002144CCE3E50; to 'NullHandler' at 0x000002144CA74B20>, <weakref at 0x000002144CEA1310; to 'NullHandler' at 0x000002144CEADE50>, <weakref at 0x000002144D1F2E50; to 'NullHandler' at 0x000002144D1DCA30>])
+    shutdown(handlerList=[<weakref at 0x00000181CE4B9EF0; to '_StderrHandler' at 0x00000181CE4BABE0>, <weakref at 0x00000181D1E47C70; to 'NullHandler' at 0x00000181D1E97460>, <weakref at 0x00000181D205D810; to 'NullHandler' at 0x00000181D1E43B20>, <weakref at 0x00000181D2272180; to 'NullHandler' at 0x00000181D227DE50>, <weakref at 0x00000181D25C3D10; to 'NullHandler' at 0x00000181D25ABA30>])
         Perform any cleanup actions in the logging system (e.g. flushing
         buffers).
         

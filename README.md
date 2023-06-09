@@ -5,17 +5,26 @@
 
 ```bash
 cd src/help
-python3 help.py
+# Note: Will open the default browser and redirect to url: https://xkcd.com/353/.
+# 注意：会打开默认浏览器并重定向到url：https://xkcd.com/353/。
+# 注意：會打開默認瀏覽器並重定向到url：https://xkcd.com/353/。
+python help.py
 
 cd ../modules/
-python3 __failed.py
-python3 __success.py
+python __failed.py
+python __success.py
 
 cd ../dir/
-python3 dir.py
+python dir.py
 
 cd failed
-python3 dir_v0.0.1py
-python3 dir_v0.1py
-python3 dir_v0.2py
+# Note: You need to manually press the space bar several times (you can press and hold it directly)!
+# 注意：您需要手动按数次空格（可以直接按住不松手）！
+# 注意：您需要手動按數次空格（可以直接按住不松手）！
+python dir_v0.0.1.py
+python dir_v0.1.py
+python dir_v0.2.py
+
+cd .././../../
+
 ```

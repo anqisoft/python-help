@@ -541,7 +541,7 @@ CLASSES
      |      in the background.  When successful, the coroutine returns a
      |      (transport, protocol) pair.
      |  
-     |  async create_datagram_endpoint(self, protocol_factory, local_addr=None, remote_addr=None, *, family=0, proto=0, flags=0, reuse_address=<object object at 0x0000021448458BA0>, reuse_port=None, allow_broadcast=None, sock=None)
+     |  async create_datagram_endpoint(self, protocol_factory, local_addr=None, remote_addr=None, *, family=0, proto=0, flags=0, reuse_address=<object object at 0x00000181CD828BA0>, reuse_port=None, allow_broadcast=None, sock=None)
      |      Create datagram connection.
      |  
      |  create_future(self)
@@ -2192,7 +2192,7 @@ CLASSES
      |      in the background.  When successful, the coroutine returns a
      |      (transport, protocol) pair.
      |  
-     |  async create_datagram_endpoint(self, protocol_factory, local_addr=None, remote_addr=None, *, family=0, proto=0, flags=0, reuse_address=<object object at 0x0000021448458BA0>, reuse_port=None, allow_broadcast=None, sock=None)
+     |  async create_datagram_endpoint(self, protocol_factory, local_addr=None, remote_addr=None, *, family=0, proto=0, flags=0, reuse_address=<object object at 0x00000181CD828BA0>, reuse_port=None, allow_broadcast=None, sock=None)
      |      Create datagram connection.
      |  
      |  create_future(self)
@@ -2952,7 +2952,7 @@ CLASSES
      |      in the background.  When successful, the coroutine returns a
      |      (transport, protocol) pair.
      |  
-     |  async create_datagram_endpoint(self, protocol_factory, local_addr=None, remote_addr=None, *, family=0, proto=0, flags=0, reuse_address=<object object at 0x0000021448458BA0>, reuse_port=None, allow_broadcast=None, sock=None)
+     |  async create_datagram_endpoint(self, protocol_factory, local_addr=None, remote_addr=None, *, family=0, proto=0, flags=0, reuse_address=<object object at 0x00000181CD828BA0>, reuse_port=None, allow_broadcast=None, sock=None)
      |      Create datagram connection.
      |  
      |  create_future(self)

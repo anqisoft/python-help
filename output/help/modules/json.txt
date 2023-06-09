@@ -267,7 +267,7 @@ CLASSES
      |      this context are those with character codes in the 0-31 range,
      |      including ``'\t'`` (tab), ``'\n'``, ``'\r'`` and ``'\0'``.
      |  
-     |  decode(self, s, _w=<built-in method match of re.Pattern object at 0x000002144C14B870>)
+     |  decode(self, s, _w=<built-in method match of re.Pattern object at 0x00000181D151B870>)
      |      Return the Python representation of ``s`` (a ``str`` instance
      |      containing a JSON document).
      |  

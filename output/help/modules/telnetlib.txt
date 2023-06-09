@@ -47,7 +47,7 @@ CLASSES
         Telnet
     
     class Telnet(builtins.object)
-     |  Telnet(host=None, port=0, timeout=<object object at 0x0000021448458A50>)
+     |  Telnet(host=None, port=0, timeout=<object object at 0x00000181CD828A50>)
      |  
      |  Telnet interface class.
      |  
@@ -109,7 +109,7 @@ CLASSES
      |  
      |  __exit__(self, type, value, traceback)
      |  
-     |  __init__(self, host=None, port=0, timeout=<object object at 0x0000021448458A50>)
+     |  __init__(self, host=None, port=0, timeout=<object object at 0x00000181CD828A50>)
      |      Constructor.
      |      
      |      When called without arguments, create an unconnected instance.
@@ -167,7 +167,7 @@ CLASSES
      |  mt_interact(self)
      |      Multithreaded version of interact().
      |  
-     |  open(self, host, port=0, timeout=<object object at 0x0000021448458A50>)
+     |  open(self, host, port=0, timeout=<object object at 0x00000181CD828A50>)
      |      Connect to a host.
      |      
      |      The optional second argument is the port number, which

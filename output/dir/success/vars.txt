@@ -1,1 +1,0 @@
-{'top_catalog': '../../output/dir/success'}

@@ -54,7 +54,7 @@ CLASSES
             NNTP_SSL
     
     class NNTP(builtins.object)
-     |  NNTP(host, port=119, user=None, password=None, readermode=None, usenetrc=False, timeout=<object object at 0x0000021448458A50>)
+     |  NNTP(host, port=119, user=None, password=None, readermode=None, usenetrc=False, timeout=<object object at 0x00000181CD828A50>)
      |  
      |  # The classes themselves
      |  
@@ -64,7 +64,7 @@ CLASSES
      |  
      |  __exit__(self, *args)
      |  
-     |  __init__(self, host, port=119, user=None, password=None, readermode=None, usenetrc=False, timeout=<object object at 0x0000021448458A50>)
+     |  __init__(self, host, port=119, user=None, password=None, readermode=None, usenetrc=False, timeout=<object object at 0x00000181CD828A50>)
      |      Initialize an instance.  Arguments:
      |      - host: hostname to connect to
      |      - port: port to connect to (default the standard NNTP port)
@@ -726,7 +726,7 @@ CLASSES
      |  args
     
     class NNTP_SSL(NNTP)
-     |  NNTP_SSL(host, port=563, user=None, password=None, ssl_context=None, readermode=None, usenetrc=False, timeout=<object object at 0x0000021448458A50>)
+     |  NNTP_SSL(host, port=563, user=None, password=None, ssl_context=None, readermode=None, usenetrc=False, timeout=<object object at 0x00000181CD828A50>)
      |  
      |  Method resolution order:
      |      NNTP_SSL
@@ -735,7 +735,7 @@ CLASSES
      |  
      |  Methods defined here:
      |  
-     |  __init__(self, host, port=563, user=None, password=None, ssl_context=None, readermode=None, usenetrc=False, timeout=<object object at 0x0000021448458A50>)
+     |  __init__(self, host, port=563, user=None, password=None, ssl_context=None, readermode=None, usenetrc=False, timeout=<object object at 0x00000181CD828A50>)
      |      This works identically to NNTP.__init__, except for the change
      |      in default port and the `ssl_context` argument for SSL connections.
      |  

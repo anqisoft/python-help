@@ -1455,7 +1455,7 @@ FUNCTIONS
     
     formatannotationrelativeto(object)
     
-    formatargspec(args, varargs=None, varkw=None, defaults=None, kwonlyargs=(), kwonlydefaults={}, annotations={}, formatarg=<class 'str'>, formatvarargs=<function <lambda> at 0x0000021448FE3DC0>, formatvarkw=<function <lambda> at 0x0000021448FE3E50>, formatvalue=<function <lambda> at 0x0000021448FE3EE0>, formatreturns=<function <lambda> at 0x0000021448FE3F70>, formatannotation=<function formatannotation at 0x0000021448FE3CA0>)
+    formatargspec(args, varargs=None, varkw=None, defaults=None, kwonlyargs=(), kwonlydefaults={}, annotations={}, formatarg=<class 'str'>, formatvarargs=<function <lambda> at 0x00000181CE3B3DC0>, formatvarkw=<function <lambda> at 0x00000181CE3B3E50>, formatvalue=<function <lambda> at 0x00000181CE3B3EE0>, formatreturns=<function <lambda> at 0x00000181CE3B3F70>, formatannotation=<function formatannotation at 0x00000181CE3B3CA0>)
         Format an argument spec from the values returned by getfullargspec.
         
         The first seven arguments are (args, varargs, varkw, defaults,
@@ -1467,7 +1467,7 @@ FUNCTIONS
         Deprecated since Python 3.5: use the `signature` function and `Signature`
         objects.
     
-    formatargvalues(args, varargs, varkw, locals, formatarg=<class 'str'>, formatvarargs=<function <lambda> at 0x0000021448FE6160>, formatvarkw=<function <lambda> at 0x0000021448FE61F0>, formatvalue=<function <lambda> at 0x0000021448FE6280>)
+    formatargvalues(args, varargs, varkw, locals, formatarg=<class 'str'>, formatvarargs=<function <lambda> at 0x00000181CE3B6160>, formatvarkw=<function <lambda> at 0x00000181CE3B61F0>, formatvalue=<function <lambda> at 0x00000181CE3B6280>)
         Format an argument spec from the 4 values returned by getargvalues.
         
         The first four arguments are (args, varargs, varkw, locals).  The
@@ -1517,7 +1517,7 @@ FUNCTIONS
         'varargs' and 'varkw' are the names of the * and ** arguments or None.
         'locals' is the locals dictionary of the given frame.
     
-    getattr_static(obj, attr, default=<object object at 0x00000214484588A0>)
+    getattr_static(obj, attr, default=<object object at 0x00000181CD8288A0>)
         Retrieve attributes without triggering dynamic lookup via the
         descriptor protocol,  __getattr__ or __getattribute__.
         
