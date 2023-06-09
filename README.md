@@ -18,9 +18,9 @@ cd ../dir/
 python dir.py
 
 cd failed
-# Note: You need to manually press the space bar several times (you can press and hold it directly)!
-# 注意：您需要手动按数次空格（可以直接按住不松手）！
-# 注意：您需要手動按數次空格（可以直接按住不松手）！
+# Note: You need to manually press the space bar several times, you can press and hold it directly, or put a Nokia phone on it, :joy:
+# 注意：您需要手动按数次空格——可以直接按住不松手，或者放个诺基亚手机压住空格键，:joy:
+# 注意：您需要手動按數次空格——可以直接按住不鬆手，或者放個諾基亞手機壓住空格鍵，:joy:
 python dir_v0.0.1.py
 python dir_v0.1.py
 python dir_v0.2.py

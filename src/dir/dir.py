@@ -23,6 +23,11 @@
 '''
 import os
 
+top_catalog = '../../output/dir/success'
+if not os.path.exists(top_catalog):
+	os.makedirs(top_catalog)
+del top_catalog
+
 print(vars(), end="", flush=True, file=open("../../output/dir/success/global_vars.txt", "w", encoding="utf-8"))
 print(locals(), end="", flush=True, file=open("../../output/dir/success/global_locals.txt", "w", encoding="utf-8"))
 print(globals(), end="", flush=True, file=open("../../output/dir/success/global_globals.txt", "w", encoding="utf-8"))
@@ -30,8 +35,8 @@ print(globals(), end="", flush=True, file=open("../../output/dir/success/global_
 DIR = dir()
 def main():
 	top_catalog = '../../output/dir/success'
-	if not os.path.exists(top_catalog):
-		os.makedirs(top_catalog)
+	# if not os.path.exists(top_catalog):
+	# 	os.makedirs(top_catalog)
 
 	print(DIR, end="", flush=True, file=open(f"{top_catalog}/index.txt", "w", encoding="utf-8"))
 	print(vars(), end="", flush=True, file=open(f"{top_catalog}/vars.txt", "w", encoding="utf-8"))

@@ -1056,7 +1056,7 @@ FUNCTIONS
         Close an integer socket file descriptor.  This is like os.close(), but for
         sockets; on some platforms os.close() won't work for socket file descriptors.
     
-    create_connection(address, timeout=<object object at 0x00000181CD828A50>, source_address=None)
+    create_connection(address, timeout=<object object at 0x0000020E039D8A50>, source_address=None)
         Connect to *address* and return the socket object.
         
         Convenience function.  Connect to *address* (a 2-tuple ``(host,

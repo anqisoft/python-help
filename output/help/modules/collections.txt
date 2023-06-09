@@ -723,7 +723,7 @@ CLASSES
      |  clear(self)
      |      D.clear() -> None.  Remove all items from D.
      |  
-     |  pop(self, key, default=<object object at 0x00000181CD828160>)
+     |  pop(self, key, default=<object object at 0x0000020E039D8160>)
      |      D.pop(k[,d]) -> v, remove specified key and return the corresponding value.
      |      If key is not found, d is returned if given, otherwise KeyError is raised.
      |  

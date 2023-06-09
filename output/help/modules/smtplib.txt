@@ -59,7 +59,7 @@ CLASSES
             SMTP_SSL
     
     class SMTP(builtins.object)
-     |  SMTP(host='', port=0, local_hostname=None, timeout=<object object at 0x00000181CD828A50>, source_address=None)
+     |  SMTP(host='', port=0, local_hostname=None, timeout=<object object at 0x0000020E039D8A50>, source_address=None)
      |  
      |  This class manages a connection to an SMTP or ESMTP server.
      |  SMTP Objects:
@@ -95,7 +95,7 @@ CLASSES
      |  
      |  __exit__(self, *args)
      |  
-     |  __init__(self, host='', port=0, local_hostname=None, timeout=<object object at 0x00000181CD828A50>, source_address=None)
+     |  __init__(self, host='', port=0, local_hostname=None, timeout=<object object at 0x0000020E039D8A50>, source_address=None)
      |      Initialize a new instance.
      |      
      |      If specified, `host` is the name of the remote host to which to
@@ -1384,7 +1384,7 @@ CLASSES
      |  args
     
     class SMTP_SSL(SMTP)
-     |  SMTP_SSL(host='', port=0, local_hostname=None, keyfile=None, certfile=None, timeout=<object object at 0x00000181CD828A50>, source_address=None, context=None)
+     |  SMTP_SSL(host='', port=0, local_hostname=None, keyfile=None, certfile=None, timeout=<object object at 0x0000020E039D8A50>, source_address=None, context=None)
      |  
      |  This is a subclass derived from SMTP that connects over an SSL
      |  encrypted socket (to use this class you need a socket module that was
@@ -1404,7 +1404,7 @@ CLASSES
      |  
      |  Methods defined here:
      |  
-     |  __init__(self, host='', port=0, local_hostname=None, keyfile=None, certfile=None, timeout=<object object at 0x00000181CD828A50>, source_address=None, context=None)
+     |  __init__(self, host='', port=0, local_hostname=None, keyfile=None, certfile=None, timeout=<object object at 0x0000020E039D8A50>, source_address=None, context=None)
      |      Initialize a new instance.
      |      
      |      If specified, `host` is the name of the remote host to which to

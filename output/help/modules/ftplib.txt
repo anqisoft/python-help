@@ -51,7 +51,7 @@ CLASSES
         error_temp
     
     class FTP(builtins.object)
-     |  FTP(host='', user='', passwd='', acct='', timeout=<object object at 0x00000181CD828A50>, source_address=None, *, encoding='utf-8')
+     |  FTP(host='', user='', passwd='', acct='', timeout=<object object at 0x0000020E039D8A50>, source_address=None, *, encoding='utf-8')
      |  
      |  An FTP client class.
      |  
@@ -82,7 +82,7 @@ CLASSES
      |  __exit__(self, *args)
      |      # Context management protocol: try to quit() if active
      |  
-     |  __init__(self, host='', user='', passwd='', acct='', timeout=<object object at 0x00000181CD828A50>, source_address=None, *, encoding='utf-8')
+     |  __init__(self, host='', user='', passwd='', acct='', timeout=<object object at 0x0000020E039D8A50>, source_address=None, *, encoding='utf-8')
      |      Initialization method (called by class instantiation).
      |      Initialize host to localhost, port to standard ftp port.
      |      Optional arguments are host (for connect()),
@@ -322,7 +322,7 @@ CLASSES
      |  welcome = None
     
     class FTP_TLS(FTP)
-     |  FTP_TLS(host='', user='', passwd='', acct='', keyfile=None, certfile=None, context=None, timeout=<object object at 0x00000181CD828A50>, source_address=None, *, encoding='utf-8')
+     |  FTP_TLS(host='', user='', passwd='', acct='', keyfile=None, certfile=None, context=None, timeout=<object object at 0x0000020E039D8A50>, source_address=None, *, encoding='utf-8')
      |  
      |  A FTP subclass which adds TLS support to FTP as described
      |  in RFC-4217.
@@ -363,7 +363,7 @@ CLASSES
      |  
      |  Methods defined here:
      |  
-     |  __init__(self, host='', user='', passwd='', acct='', keyfile=None, certfile=None, context=None, timeout=<object object at 0x00000181CD828A50>, source_address=None, *, encoding='utf-8')
+     |  __init__(self, host='', user='', passwd='', acct='', keyfile=None, certfile=None, context=None, timeout=<object object at 0x0000020E039D8A50>, source_address=None, *, encoding='utf-8')
      |      Initialization method (called by class instantiation).
      |      Initialize host to localhost, port to standard ftp port.
      |      Optional arguments are host (for connect()),

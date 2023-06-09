@@ -23,7 +23,7 @@ CLASSES
             POP3_SSL
     
     class POP3(builtins.object)
-     |  POP3(host, port=110, timeout=<object object at 0x00000181CD828A50>)
+     |  POP3(host, port=110, timeout=<object object at 0x0000020E039D8A50>)
      |  
      |  This class supports both the minimal and optional command sets.
      |  Arguments can be strings or integers (where appropriate)
@@ -69,7 +69,7 @@ CLASSES
      |  
      |  Methods defined here:
      |  
-     |  __init__(self, host, port=110, timeout=<object object at 0x00000181CD828A50>)
+     |  __init__(self, host, port=110, timeout=<object object at 0x0000020E039D8A50>)
      |      Initialize self.  See help(type(self)) for accurate signature.
      |  
      |  apop(self, user, password)
@@ -191,7 +191,7 @@ CLASSES
      |  timestamp = re.compile(b'\\+OK.[^<]*(<.*>)')
     
     class POP3_SSL(POP3)
-     |  POP3_SSL(host, port=995, keyfile=None, certfile=None, timeout=<object object at 0x00000181CD828A50>, context=None)
+     |  POP3_SSL(host, port=995, keyfile=None, certfile=None, timeout=<object object at 0x0000020E039D8A50>, context=None)
      |  
      |  POP3 client class over SSL connection
      |  
@@ -213,7 +213,7 @@ CLASSES
      |  
      |  Methods defined here:
      |  
-     |  __init__(self, host, port=995, keyfile=None, certfile=None, timeout=<object object at 0x00000181CD828A50>, context=None)
+     |  __init__(self, host, port=995, keyfile=None, certfile=None, timeout=<object object at 0x0000020E039D8A50>, context=None)
      |      Initialize self.  See help(type(self)) for accurate signature.
      |  
      |  stls(self, keyfile=None, certfile=None, context=None)

@@ -374,7 +374,7 @@ CLASSES
      |  args
     
     class DocTestFinder(builtins.object)
-     |  DocTestFinder(verbose=False, parser=<doctest.DocTestParser object at 0x00000181D17EA520>, recurse=True, exclude_empty=True)
+     |  DocTestFinder(verbose=False, parser=<doctest.DocTestParser object at 0x0000020E07999520>, recurse=True, exclude_empty=True)
      |  
      |  A class used to extract the DocTests that are relevant to a given
      |  object, from its docstring and the docstrings of its contained
@@ -384,7 +384,7 @@ CLASSES
      |  
      |  Methods defined here:
      |  
-     |  __init__(self, verbose=False, parser=<doctest.DocTestParser object at 0x00000181D17EA520>, recurse=True, exclude_empty=True)
+     |  __init__(self, verbose=False, parser=<doctest.DocTestParser object at 0x0000020E07999520>, recurse=True, exclude_empty=True)
      |      Create a new doctest finder.
      |      
      |      The optional argument `parser` specifies a class or
@@ -989,7 +989,7 @@ FUNCTIONS
           ...                                   REPORT_ONLY_FIRST_FAILURE)
           True
     
-    testfile(filename, module_relative=True, name=None, package=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, parser=<doctest.DocTestParser object at 0x00000181D17EA3A0>, encoding=None)
+    testfile(filename, module_relative=True, name=None, package=None, globs=None, verbose=None, report=True, optionflags=0, extraglobs=None, raise_on_error=False, parser=<doctest.DocTestParser object at 0x0000020E079993A0>, encoding=None)
         Test examples in the given file.  Return (#failures, #tests).
         
         Optional keyword arg "module_relative" specifies how filenames

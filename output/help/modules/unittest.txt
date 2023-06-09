@@ -459,7 +459,7 @@ CLASSES
      |  skipTest(self, reason)
      |      Skip this test.
      |  
-     |  subTest(self, msg=<object object at 0x00000181CFF05060>, **params)
+     |  subTest(self, msg=<object object at 0x0000020E060B5060>, **params)
      |      Return a context manager that will return the enclosed block
      |      of code in a subtest identified by the optional message and
      |      keyword parameters.  A failure in the subtest marks the test
@@ -871,7 +871,7 @@ CLASSES
      |  skipTest(self, reason)
      |      Skip this test.
      |  
-     |  subTest(self, msg=<object object at 0x00000181CFF05060>, **params)
+     |  subTest(self, msg=<object object at 0x0000020E060B5060>, **params)
      |      Return a context manager that will return the enclosed block
      |      of code in a subtest identified by the optional message and
      |      keyword parameters.  A failure in the subtest marks the test
@@ -1374,7 +1374,7 @@ CLASSES
      |  skipTest(self, reason)
      |      Skip this test.
      |  
-     |  subTest(self, msg=<object object at 0x00000181CFF05060>, **params)
+     |  subTest(self, msg=<object object at 0x0000020E060B5060>, **params)
      |      Return a context manager that will return the enclosed block
      |      of code in a subtest identified by the optional message and
      |      keyword parameters.  A failure in the subtest marks the test
@@ -1782,14 +1782,14 @@ CLASSES
      |      Used by TextTestRunner.
     
     main = class TestProgram(builtins.object)
-     |  main(module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0x00000181CFF2F100>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
+     |  main(module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0x0000020E060DE100>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
      |  
      |  A command-line program that runs a set of tests; this is primarily
      |  for making test modules conveniently executable.
      |  
      |  Methods defined here:
      |  
-     |  __init__(self, module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0x00000181CFF2F100>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
+     |  __init__(self, module='__main__', defaultTest=None, argv=None, testRunner=None, testLoader=<unittest.loader.TestLoader object at 0x0000020E060DE100>, exit=True, verbosity=1, failfast=None, catchbreak=None, buffer=None, warnings=None, *, tb_locals=False)
      |      Initialize self.  See help(type(self)) for accurate signature.
      |  
      |  createTests(self, from_discovery=False, Loader=None)
@@ -1839,13 +1839,13 @@ FUNCTIONS
     
     expectedFailure(test_item)
     
-    findTestCases(module, prefix='test', sortUsing=<function three_way_cmp at 0x00000181CFEC29D0>, suiteClass=<class 'unittest.suite.TestSuite'>)
+    findTestCases(module, prefix='test', sortUsing=<function three_way_cmp at 0x0000020E060719D0>, suiteClass=<class 'unittest.suite.TestSuite'>)
     
-    getTestCaseNames(testCaseClass, prefix, sortUsing=<function three_way_cmp at 0x00000181CFEC29D0>, testNamePatterns=None)
+    getTestCaseNames(testCaseClass, prefix, sortUsing=<function three_way_cmp at 0x0000020E060719D0>, testNamePatterns=None)
     
     installHandler()
     
-    makeSuite(testCaseClass, prefix='test', sortUsing=<function three_way_cmp at 0x00000181CFEC29D0>, suiteClass=<class 'unittest.suite.TestSuite'>)
+    makeSuite(testCaseClass, prefix='test', sortUsing=<function three_way_cmp at 0x0000020E060719D0>, suiteClass=<class 'unittest.suite.TestSuite'>)
     
     registerResult(result)
     
